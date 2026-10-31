@@ -193,8 +193,9 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               src={project.previewImage}
               alt={`Interface do sistema ${project.name}`}
               width={1200}
-              height={675}
+              height={750}
               priority
+              sizes="(max-width: 1280px) 100vw, 1200px"
               className="w-full h-auto object-cover rounded-xl transition-transform duration-700 group-hover:scale-[1.01]"
             />
           </div>

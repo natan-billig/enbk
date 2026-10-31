@@ -9,8 +9,8 @@ interface ProfileAvatarProps {
 }
 
 export function ProfileAvatar({ className = "", size = 160 }: ProfileAvatarProps) {
-  // Use avatar.svg as reliable base; profile.jpg can override when present
-  const [usePhoto, setUsePhoto] = useState(false);
+  // Use profile.jpg as primary; avatar.svg as fallback on error
+  const [usePhoto, setUsePhoto] = useState(true);
 
   return (
     <div className={`relative flex items-center justify-center ${className}`}>
@@ -27,6 +27,7 @@ export function ProfileAvatar({ className = "", size = 160 }: ProfileAvatarProps
               width={size}
               height={size}
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              priority
               onError={() => setUsePhoto(false)}
             />
           ) : (

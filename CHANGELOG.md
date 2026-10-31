@@ -5,6 +5,30 @@ Todas as mudanças notáveis deste projeto serão documentadas neste arquivo.
 O formato baseia-se em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Semantic Versioning (SemVer)](https://semver.org/lang/pt-BR/).
 
+## [1.2.1] - 2026-10-31
+
+### Modificado
+- **Atualização da Foto de Perfil Profissional de Natan Billig:**
+  - Substituição da foto antiga de gala/formatura de 2022 por fotografia de alta resolução recente com o penteado moderno atual (degrade lateral texturizado, barba aparada, camisa gola polo/social azul-marinho e iluminação profissional natural).
+  - Enquadramento perfeito 1000x1000px otimizado para o container circular holográfico em `public/images/profile.jpg`.
+  - Ativação do carregamento prioritário de imagem em `ProfileAvatar.tsx` (`usePhoto = true` e prop `priority`) para otimização de LCP e Core Web Vitals.
+  - Sanitização integral de metadados binários JPEG (eliminação de tags EXIF, dados de GPS e telemetria de hardware).
+  - Preservação do mecanismo de fallback resiliente para vetor SVG (`avatar.svg`) via `onError`.
+
+### Governança Triádica & Auditorias Concluídas
+- **QA & Performance (`qa-performance-validator`):** `[APROVADO]` — Rota estática rápida, 0 CLS e LCP otimizado com `priority`.
+- **Cibersegurança & LGPD (`cybersecurity-lgpd-auditor`):** `[APROVADO]` — Zero EXIF/GPS, conformidade estrita com os arts. 6º, 7º e 18 da Lei 13.709/2018 (minimização e publicidade autorizada de dado pessoal profissional).
+
+## [1.2.0] - 2026-10-31
+
+### Adicionado
+- **Captura e Substituição por Screenshots Reais dos Sistemas:**
+  - `enbik-preview.png`: Captura real da interface em produção de **ENBIK ERP** com módulo executivo de BI, curva fluida de fluxo de vendas, alertas preventivos de ruptura de estoque (peças industriais), faturamento timbrado DNIT (Formulario 120) e DRE operacional em modo dark.
+  - `kofre-preview.png`: Captura real da interface de **Kofre** com painel patrimonial multi-moeda (PYG, USD, BRL), termômetro DTI de endividamento, faturas de cartão Mastercard Black e resumo operacional em dark mode.
+  - `cheques-preview.png`: Captura real do dashboard em produção de **Controle Inteligente de Cheques** com indicadores de títulos a pagar e receber, curva de vencimentos futuros e gráfico de concentração por instituição bancária (Sudameris, GNB, Continental, Interfisa).
+- **Atalhos e Links Diretos das Aplicações Oficiais:**
+  - Adição da propriedade `liveAppUrl` no catálogo `projects.ts`, permitindo ao visitante tanto acessar a ficha técnica quanto abrir a aplicação em produção diretamente.
+
 ## [1.1.0] - 2026-10-31
 
 ### Adicionado

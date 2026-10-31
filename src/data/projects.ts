@@ -60,7 +60,7 @@ export const projects: ProjectItem[] = [
     version: "v2.4.0",
     releaseDate: "2026",
     clientSegment: "Distribuidoras, Atacadistas, Agronegócio & Indústrias",
-    previewImage: "/images/projects/enbik-preview.svg",
+    previewImage: "/images/projects/enbik-preview.png",
     liveAppUrl: "https://enbik.vercel.app",
     summary:
       "Plataforma completa de gestão empresarial e governança fiscal em nuvem, projetada para alta performance operacional, isolamento estrito de dados e conformidade regulatória contínua.",
@@ -189,7 +189,7 @@ export const projects: ProjectItem[] = [
     version: "v1.8.2",
     releaseDate: "2026",
     clientSegment: "Profissionais Liberais, Famílias, Nômades Digitais & Investidores",
-    previewImage: "/images/projects/kofre-preview.svg",
+    previewImage: "/images/projects/kofre-preview.png",
     liveAppUrl: "https://kofre-app.vercel.app",
     summary:
       "Solução ágil de inteligência orçamentária pessoal e familiar com suporte a transações multi-moeda, gestão de limites de crédito e conciliação em tempo real.",
@@ -312,7 +312,7 @@ export const projects: ProjectItem[] = [
     version: "v1.2.5",
     releaseDate: "2026",
     clientSegment: "Comércio Atacadista, Concessionárias, Factoring & Cooperativas",
-    previewImage: "/images/projects/cheques-preview.svg",
+    previewImage: "/images/projects/cheques-preview.png",
     liveAppUrl: "https://controle-cheques-rosy.vercel.app",
     summary:
       "Pipeline automatizado de processamento documental que digitaliza cheques com visão computacional de alta fidelidade e notifica prazos críticos via mensageria corporativa.",
