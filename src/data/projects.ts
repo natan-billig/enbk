@@ -33,6 +33,7 @@ export interface ProjectItem {
   releaseDate: string;
   clientSegment: string;
   previewImage: string;
+  liveAppUrl?: string;
   summary: string;
   description: string;
   problemSolved: string[];
@@ -60,6 +61,7 @@ export const projects: ProjectItem[] = [
     releaseDate: "2026",
     clientSegment: "Distribuidoras, Atacadistas, Agronegócio & Indústrias",
     previewImage: "/images/projects/enbik-preview.svg",
+    liveAppUrl: "https://enbik.vercel.app",
     summary:
       "Plataforma completa de gestão empresarial e governança fiscal em nuvem, projetada para alta performance operacional, isolamento estrito de dados e conformidade regulatória contínua.",
     description:
@@ -188,6 +190,7 @@ export const projects: ProjectItem[] = [
     releaseDate: "2026",
     clientSegment: "Profissionais Liberais, Famílias, Nômades Digitais & Investidores",
     previewImage: "/images/projects/kofre-preview.svg",
+    liveAppUrl: "https://kofre-app.vercel.app",
     summary:
       "Solução ágil de inteligência orçamentária pessoal e familiar com suporte a transações multi-moeda, gestão de limites de crédito e conciliação em tempo real.",
     description:
@@ -310,6 +313,7 @@ export const projects: ProjectItem[] = [
     releaseDate: "2026",
     clientSegment: "Comércio Atacadista, Concessionárias, Factoring & Cooperativas",
     previewImage: "/images/projects/cheques-preview.svg",
+    liveAppUrl: "https://controle-cheques-rosy.vercel.app",
     summary:
       "Pipeline automatizado de processamento documental que digitaliza cheques com visão computacional de alta fidelidade e notifica prazos críticos via mensageria corporativa.",
     description:

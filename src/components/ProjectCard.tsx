@@ -137,14 +137,28 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </div>
 
           {/* Action Row */}
-          <div className="flex items-center justify-between gap-3 pt-2">
+          <div className="flex items-center justify-between gap-2 pt-2">
             <Link
               href={`/${project.slug}`}
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-mono font-semibold bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 hover:border-cyan-400/70 transition-all flex-1 justify-center"
+              className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-mono font-semibold bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 hover:border-cyan-400/70 transition-all flex-1 justify-center"
             >
-              <span>Ver Catálogo Completo</span>
+              <span>Ficha Técnica</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
+
+            {project.liveAppUrl && (
+              <a
+                href={project.liveAppUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Abrir sistema ${project.name} em produção`}
+                className="inline-flex items-center gap-1 px-2.5 py-2 rounded-lg text-xs font-mono font-medium text-emerald-400 bg-emerald-950/30 hover:bg-emerald-900/40 border border-emerald-500/30 hover:border-emerald-400/60 transition-colors"
+                title="Acessar Sistema em Produção"
+              >
+                <span>App</span>
+                <ExternalLink className="w-3 h-3" />
+              </a>
+            )}
 
             <a
               href={whatsappUrl}

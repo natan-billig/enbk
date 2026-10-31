@@ -100,11 +100,23 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <span>Voltar ao Catálogo ENBK</span>
           </Link>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <span className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-mono bg-slate-900 border border-slate-800 text-slate-400">
               <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
               <span>{project.status}</span>
             </span>
+
+            {project.liveAppUrl && (
+              <a
+                href={project.liveAppUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono font-semibold bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 border border-emerald-500/40 hover:border-emerald-400 transition-all"
+              >
+                <span>Acessar App</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            )}
 
             <a
               href={whatsappUrl}
@@ -146,13 +158,24 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
           {/* Quick Info Bar & Shortcut */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800 backdrop-blur-sm">
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <span className="text-xs font-mono uppercase tracking-wider text-slate-400">
-                Atalho direto no catálogo:
+                Atalho no catálogo:
               </span>
               <code className="px-2.5 py-1 rounded-md bg-slate-950 border border-cyan-500/30 text-cyan-300 font-mono text-xs sm:text-sm font-semibold select-all">
                 {canonicalUrl}
               </code>
+              {project.liveAppUrl && (
+                <a
+                  href={project.liveAppUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-950/40 border border-emerald-500/40 text-emerald-300 font-mono text-xs font-semibold hover:border-emerald-400 transition-colors"
+                >
+                  <span>Abrir Aplicação Oficial</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              )}
             </div>
 
             <div className="text-xs font-mono text-slate-400">
