@@ -1,6 +1,7 @@
 import React from "react";
+import Link from "next/link";
 import { ProfileAvatar } from "./ProfileAvatar";
-import { ArrowDown, Cpu, ShieldCheck, Zap, Sparkles } from "lucide-react";
+import { ArrowDown, Cpu, ShieldCheck, Zap, Sparkles, Terminal } from "lucide-react";
 
 export function Hero() {
   return (
@@ -18,7 +19,7 @@ export function Hero() {
             {/* Tagline / Subtitle Pill */}
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/90 border border-cyan-500/30 text-xs font-mono uppercase tracking-widest text-cyan-300 shadow-[0_0_15px_rgba(6,182,212,0.15)]">
               <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-              <span>Full-Stack & Systems Architect</span>
+              <span>Full-Stack &amp; Systems Architect</span>
             </div>
 
             {/* Name & Title */}
@@ -27,40 +28,56 @@ export function Hero() {
                 Natan <span className="text-gradient-cyan">Billig</span>
               </h1>
               <p className="mt-2 text-lg sm:text-xl text-slate-300 font-medium tracking-wide">
-                Desenvolvedor de Software & Criador de Soluções Digitais
+                Desenvolvedor de Software &amp; Criador de Soluções Digitais
               </p>
             </div>
 
             {/* Concise Bio */}
             <p className="text-slate-400 text-base sm:text-lg leading-relaxed max-w-2xl font-normal">
-              Engenharia de software orientada a resultados: desenvolvimento de sistemas de missão crítica, 
-              automação de operações comerciais e fiscais, controle financeiro de alta precisão e IA aplicada 
-              para solucionar gargalos reais do dia a dia corporativo com velocidade e robustez.
+              Engenharia de software de ponta a ponta: sistemas de missão crítica, governança fiscal em nuvem,
+              controle financeiro multi-moeda de alta precisão e pipelines de IA com visão computacional para eliminar
+              gargalos operacionais reais do mercado corporativo.
             </p>
 
+            {/* Stats / Numbers Highlight */}
+            <div className="grid grid-cols-3 gap-3 py-2 max-w-lg border-y border-slate-800/80">
+              <div className="text-center md:text-left">
+                <div className="text-xl sm:text-2xl font-black font-mono text-cyan-400">+3</div>
+                <div className="text-[11px] font-mono text-slate-400">Sistemas no Catálogo</div>
+              </div>
+              <div className="text-center md:text-left border-x border-slate-800/80 px-3">
+                <div className="text-xl sm:text-2xl font-black font-mono text-emerald-400">100%</div>
+                <div className="text-[11px] font-mono text-slate-400">Isolamento Multi-Tenant</div>
+              </div>
+              <div className="text-center md:text-left">
+                <div className="text-xl sm:text-2xl font-black font-mono text-purple-400">99.4%</div>
+                <div className="text-[11px] font-mono text-slate-400">Acurácia IA Vision</div>
+              </div>
+            </div>
+
             {/* Pillar highlights */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 max-w-xl">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 max-w-xl">
               <div className="flex items-center gap-2.5 p-3 rounded-lg bg-slate-900/50 border border-slate-800/80">
                 <Cpu className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                <span className="text-xs font-mono text-slate-300">Missão Crítica & SaaS</span>
+                <span className="text-xs font-mono text-slate-300">Missão Crítica &amp; SaaS</span>
               </div>
               <div className="flex items-center gap-2.5 p-3 rounded-lg bg-slate-900/50 border border-slate-800/80">
                 <ShieldCheck className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                <span className="text-xs font-mono text-slate-300">Automação & Finanças</span>
+                <span className="text-xs font-mono text-slate-300">Automação &amp; Finanças</span>
               </div>
               <div className="flex items-center gap-2.5 p-3 rounded-lg bg-slate-900/50 border border-slate-800/80">
                 <Zap className="w-4 h-4 text-cyan-300 flex-shrink-0" />
-                <span className="text-xs font-mono text-slate-300">IA Aplicada & Visão</span>
+                <span className="text-xs font-mono text-slate-300">IA Aplicada &amp; Visão</span>
               </div>
             </div>
 
             {/* Action buttons */}
-            <div className="pt-4 flex flex-wrap items-center justify-center md:justify-start gap-4">
+            <div className="pt-3 flex flex-wrap items-center justify-center md:justify-start gap-4">
               <a
                 href="#projetos"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold bg-cyan-500 hover:bg-cyan-400 text-slate-950 transition-all duration-200 shadow-[0_0_20px_rgba(6,182,212,0.35)] hover:shadow-[0_0_25px_rgba(34,211,238,0.5)]"
               >
-                <span>Explorar Projetos</span>
+                <span>Explorar Catálogo</span>
                 <ArrowDown className="w-4 h-4" />
               </a>
 

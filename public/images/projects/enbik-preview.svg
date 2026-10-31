@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Gradients & Shadows -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#131b2e" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0d1424" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="chartArea" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Window Container -->
+  <rect width="1200" height="675" rx="16" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Window Header / Title Bar -->
+  <rect width="1200" height="44" rx="16" fill="#090d18" stroke="#1e293b" stroke-width="1"/>
+  <rect y="32" width="1200" height="12" fill="#090d18"/>
+  
+  <!-- Window Controls -->
+  <circle cx="28" cy="22" r="6" fill="#ef4444"/>
+  <circle cx="48" cy="22" r="6" fill="#eab308"/>
+  <circle cx="68" cy="22" r="6" fill="#22c55e"/>
+
+  <!-- Address Bar -->
+  <rect x="240" y="8" width="720" height="28" rx="6" fill="#131b2e" stroke="#1e293b"/>
+  <circle cx="260" cy="22" r="4" fill="#06b6d4"/>
+  <text x="275" y="27" fill="#94a3b8" font-family="monospace" font-size="12">https://app.enbik.com/dashboard/fiscal-dnit</text>
+  <rect x="910" y="14" width="38" height="16" rx="4" fill="#06b6d4" fill-opacity="0.15"/>
+  <text x="917" y="26" fill="#38bdf8" font-family="monospace" font-size="10">SSL</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="44" width="220" height="631" fill="#0b101e" stroke="#1e293b" stroke-width="1"/>
+  
+  <!-- Sidebar Brand -->
+  <rect x="20" y="66" width="32" height="32" rx="8" fill="url(#cyanGrad)"/>
+  <text x="31" y="88" fill="#ffffff" font-family="monospace" font-weight="bold" font-size="18">E</text>
+  <text x="62" y="84" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="16">ENBIK</text>
+  <text x="120" y="84" fill="#06b6d4" font-family="sans-serif" font-weight="bold" font-size="16">ERP</text>
+  <text x="62" y="97" fill="#64748b" font-family="monospace" font-size="10">ENTERPRISE SAAS</text>
+
+  <!-- Multi-tenant Switcher -->
+  <rect x="18" y="115" width="184" height="34" rx="6" fill="#131b2e" stroke="#1e293b"/>
+  <circle cx="34" cy="132" r="4" fill="#10b981"/>
+  <text x="46" y="136" fill="#cbd5e1" font-family="sans-serif" font-size="11" font-weight="500">Distribuidora Central</text>
+
+  <!-- Nav Items -->
+  <!-- Active Item: Visão Geral -->
+  <rect x="14" y="165" width="192" height="34" rx="6" fill="#06b6d4" fill-opacity="0.12" stroke="#06b6d4" stroke-opacity="0.3"/>
+  <path d="M 28 178 L 36 178 L 36 186 L 28 186 Z M 38 178 L 46 178 L 46 186 L 38 186 Z" fill="#38bdf8"/>
+  <text x="54" y="187" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="600">Painel Executivo</text>
+
+  <text x="54" y="227" fill="#94a3b8" font-family="sans-serif" font-size="12">Faturamento DNIT</text>
+  <text x="54" y="267" fill="#94a3b8" font-family="sans-serif" font-size="12">Compras & Estoque</text>
+  <text x="54" y="307" fill="#94a3b8" font-family="sans-serif" font-size="12">Fluxo Financeiro</text>
+  <text x="54" y="347" fill="#94a3b8" font-family="sans-serif" font-size="12">Auditoria & Logs</text>
+  <text x="54" y="387" fill="#94a3b8" font-family="sans-serif" font-size="12">Multi-Empresas</text>
+
+  <!-- Sidebar Status Box -->
+  <rect x="18" y="580" width="184" height="65" rx="8" fill="#131b2e" stroke="#1e293b"/>
+  <circle cx="32" cy="600" r="4" fill="#10b981"/>
+  <text x="44" y="604" fill="#10b981" font-family="monospace" font-size="10" font-weight="bold">CONEXÃO SEGURA</text>
+  <text x="32" y="622" fill="#94a3b8" font-family="sans-serif" font-size="10">RLS Ativo • Multi-Tenant</text>
+  <text x="32" y="635" fill="#64748b" font-family="monospace" font-size="9">Latência: 18ms</text>
+
+  <!-- Main Content Area -->
+  <g transform="translate(240, 60)">
+    <!-- Header Greeting & Badges -->
+    <text x="0" y="22" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="20">Visão Geral &amp; Governança Operacional</text>
+    <text x="0" y="42" fill="#64748b" font-family="sans-serif" font-size="12">Monitoramento contínuo de faturamento timbrado, estoque em tempo real e conciliação.</text>
+    
+    <rect x="750" y="6" width="170" height="32" rx="6" fill="#131b2e" stroke="#1e293b"/>
+    <text x="768" y="26" fill="#38bdf8" font-family="monospace" font-size="11">TIMBRADO ATIVO: #84920</text>
+
+    <!-- Top KPI Cards Row -->
+    <!-- Card 1: Faturamento -->
+    <rect x="0" y="60" width="220" height="96" rx="10" fill="url(#cardGrad)" stroke="#1e293b"/>
+    <rect x="0" y="60" width="4" height="96" rx="2" fill="#06b6d4"/>
+    <text x="16" y="82" fill="#94a3b8" font-family="sans-serif" font-size="11">FATURAMENTO (MÊS)</text>
+    <text x="16" y="112" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="20">Gs. 482.500k</text>
+    <rect x="16" y="125" width="56" height="18" rx="4" fill="#10b981" fill-opacity="0.15"/>
+    <text x="22" y="138" fill="#10b981" font-family="monospace" font-size="10" font-weight="bold">+18.4% vs ant.</text>
+
+    <!-- Card 2: Documentos Fiscais -->
+    <rect x="236" y="60" width="220" height="96" rx="10" fill="url(#cardGrad)" stroke="#1e293b"/>
+    <rect x="236" y="60" width="4" height="96" rx="2" fill="#10b981"/>
+    <text x="252" y="82" fill="#94a3b8" font-family="sans-serif" font-size="11">DOCS. FISCAIS DNIT</text>
+    <text x="252" y="112" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="20">1.248 <tspan font-size="13" font-weight="normal" fill="#64748b">emitidos</tspan></text>
+    <text x="252" y="137" fill="#38bdf8" font-family="monospace" font-size="10">100% Homologados</text>
+
+    <!-- Card 3: Ruptura de Estoque -->
+    <rect x="472" y="60" width="220" height="96" rx="10" fill="url(#cardGrad)" stroke="#1e293b"/>
+    <rect x="472" y="60" width="4" height="96" rx="2" fill="#f59e0b"/>
+    <text x="488" y="82" fill="#94a3b8" font-family="sans-serif" font-size="11">PREDITOR DE RUPTURA</text>
+    <text x="488" y="112" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="20">3 <tspan font-size="13" font-weight="normal" fill="#f59e0b">alertas de reposição</tspan></text>
+    <text x="488" y="137" fill="#94a3b8" font-family="monospace" font-size="10">99.2% Nível de Serviço</text>
+
+    <!-- Card 4: Conciliação -->
+    <rect x="708" y="60" width="220" height="96" rx="10" fill="url(#cardGrad)" stroke="#1e293b"/>
+    <rect x="708" y="60" width="4" height="96" rx="2" fill="#8b5cf6"/>
+    <text x="724" y="82" fill="#94a3b8" font-family="sans-serif" font-size="11">CONCILIAÇÃO BANCÁRIA</text>
+    <text x="724" y="112" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="20">R$ 1.14M <tspan font-size="13" font-weight="normal" fill="#10b981">liquidado</tspan></text>
+    <text x="724" y="137" fill="#10b981" font-family="monospace" font-size="10">Zero pendências</text>
+
+    <!-- Middle: Chart & Operations -->
+    <g transform="translate(0, 172)">
+      <!-- Main Chart Card -->
+      <rect x="0" y="0" width="580" height="230" rx="10" fill="url(#cardGrad)" stroke="#1e293b"/>
+      <text x="20" y="28" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="14">Curva de Faturamento &amp; Emissão Timbrada</text>
+      <text x="20" y="44" fill="#64748b" font-family="sans-serif" font-size="11">Frequência diária com validação fiscal automática</text>
+
+      <!-- Chart Grid Lines -->
+      <line x1="20" y1="80" x2="560" y2="80" stroke="#1e293b" stroke-dasharray="3,3"/>
+      <line x1="20" y1="125" x2="560" y2="125" stroke="#1e293b" stroke-dasharray="3,3"/>
+      <line x1="20" y1="170" x2="560" y2="170" stroke="#1e293b" stroke-dasharray="3,3"/>
+      <line x1="20" y1="210" x2="560" y2="210" stroke="#1e293b"/>
+
+      <!-- Chart Path Area -->
+      <path d="M 30 190 Q 90 170 140 140 T 260 110 T 380 75 T 470 95 T 550 50 L 550 210 L 30 210 Z" fill="url(#chartArea)"/>
+      <!-- Chart Line -->
+      <path d="M 30 190 Q 90 170 140 140 T 260 110 T 380 75 T 470 95 T 550 50" fill="none" stroke="#06b6d4" stroke-width="3"/>
+      
+      <!-- Chart Data Dots -->
+      <circle cx="140" cy="140" r="4" fill="#06b6d4" stroke="#ffffff" stroke-width="2"/>
+      <circle cx="260" cy="110" r="4" fill="#06b6d4" stroke="#ffffff" stroke-width="2"/>
+      <circle cx="380" cy="75" r="4" fill="#06b6d4" stroke="#ffffff" stroke-width="2"/>
+      <circle cx="550" cy="50" r="5" fill="#38bdf8" stroke="#ffffff" stroke-width="2" filter="url(#glowCyan)"/>
+
+      <!-- Right Panel: Fiscal Health & Status -->
+      <rect x="600" y="0" width="328" height="230" rx="10" fill="url(#cardGrad)" stroke="#1e293b"/>
+      <text x="620" y="28" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="14">Saúde dos Módulos Fiscais</text>
+      
+      <!-- Module 1 -->
+      <rect x="620" y="48" width="288" height="42" rx="6" fill="#0b101e" stroke="#1e293b"/>
+      <circle cx="636" cy="69" r="4" fill="#10b981"/>
+      <text x="648" y="67" fill="#e2e8f0" font-family="sans-serif" font-size="11" font-weight="600">Emissão DNIT Paraguay</text>
+      <text x="648" y="80" fill="#64748b" font-family="monospace" font-size="9">Validade: Ativa até Dez/2026</text>
+      <text x="860" y="73" fill="#10b981" font-family="monospace" font-size="10" text-anchor="end">100% OK</text>
+
+      <!-- Module 2 -->
+      <rect x="620" y="100" width="288" height="42" rx="6" fill="#0b101e" stroke="#1e293b"/>
+      <circle cx="636" cy="121" r="4" fill="#10b981"/>
+      <text x="648" y="119" fill="#e2e8f0" font-family="sans-serif" font-size="11" font-weight="600">Sincronizador Multi-Tenant</text>
+      <text x="648" y="132" fill="#64748b" font-family="monospace" font-size="9">PostgreSQL Row-Level Security</text>
+      <text x="860" y="125" fill="#10b981" font-family="monospace" font-size="10" text-anchor="end">ISOLADO</text>
+
+      <!-- Module 3 -->
+      <rect x="620" y="152" width="288" height="42" rx="6" fill="#0b101e" stroke="#1e293b"/>
+      <circle cx="636" cy="173" r="4" fill="#38bdf8"/>
+      <text x="648" y="171" fill="#e2e8f0" font-family="sans-serif" font-size="11" font-weight="600">Auditoria &amp; Trilha Imutável</text>
+      <text x="648" y="184" fill="#64748b" font-family="monospace" font-size="9">Logs assinados criptograficamente</text>
+      <text x="860" y="177" fill="#38bdf8" font-family="monospace" font-size="10" text-anchor="end">ATIVO</text>
+    </g>
+
+    <!-- Bottom: Recent Transactions Table -->
+    <g transform="translate(0, 415)">
+      <rect x="0" y="0" width="928" height="175" rx="10" fill="url(#cardGrad)" stroke="#1e293b"/>
+      <text x="20" y="26" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="13">Faturamento Recente Homologado</text>
+
+      <!-- Table Header -->
+      <rect x="20" y="38" width="888" height="24" rx="4" fill="#090d18"/>
+      <text x="32" y="54" fill="#64748b" font-family="monospace" font-size="10">TIMBRADO</text>
+      <text x="180" y="54" fill="#64748b" font-family="monospace" font-size="10">ENTIDADE / CLIENTE</text>
+      <text x="440" y="54" fill="#64748b" font-family="monospace" font-size="10">VALOR TOTAL</text>
+      <text x="620" y="54" fill="#64748b" font-family="monospace" font-size="10">CANAL FISCAL</text>
+      <text x="800" y="54" fill="#64748b" font-family="monospace" font-size="10">ESTADO</text>
+
+      <!-- Row 1 -->
+      <line x1="20" y1="96" x2="908" y2="96" stroke="#1e293b"/>
+      <text x="32" y="85" fill="#38bdf8" font-family="monospace" font-size="11">001-002-004921</text>
+      <text x="180" y="85" fill="#e2e8f0" font-family="sans-serif" font-size="11">Agropecuaria Santa Rosa S.A.</text>
+      <text x="440" y="85" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="11">Gs. 42.850.000</text>
+      <text x="620" y="85" fill="#94a3b8" font-family="monospace" font-size="11">DNIT Eletrônico</text>
+      <rect x="800" y="73" width="76" height="18" rx="4" fill="#10b981" fill-opacity="0.15"/>
+      <text x="814" y="86" fill="#10b981" font-family="monospace" font-size="10" font-weight="bold">AUTORIZADO</text>
+
+      <!-- Row 2 -->
+      <line x1="20" y1="134" x2="908" y2="134" stroke="#1e293b"/>
+      <text x="32" y="122" fill="#38bdf8" font-family="monospace" font-size="11">001-002-004922</text>
+      <text x="180" y="122" fill="#e2e8f0" font-family="sans-serif" font-size="11">Comercial del Este Ltda.</text>
+      <text x="440" y="122" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="11">Gs. 18.200.000</text>
+      <text x="620" y="122" fill="#94a3b8" font-family="monospace" font-size="11">DNIT Eletrônico</text>
+      <rect x="800" y="110" width="76" height="18" rx="4" fill="#10b981" fill-opacity="0.15"/>
+      <text x="814" y="123" fill="#10b981" font-family="monospace" font-size="10" font-weight="bold">AUTORIZADO</text>
+
+      <!-- Row 3 -->
+      <text x="32" y="158" fill="#38bdf8" font-family="monospace" font-size="11">001-002-004923</text>
+      <text x="180" y="158" fill="#e2e8f0" font-family="sans-serif" font-size="11">Logística Transcontinental</text>
+      <text x="440" y="158" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="11">USD 14,350.00</text>
+      <text x="620" y="158" fill="#94a3b8" font-family="monospace" font-size="11">DNIT Exportação</text>
+      <rect x="800" y="146" width="76" height="18" rx="4" fill="#10b981" fill-opacity="0.15"/>
+      <text x="814" y="159" fill="#10b981" font-family="monospace" font-size="10" font-weight="bold">AUTORIZADO</text>
+    </g>
+  </g>
+</svg>

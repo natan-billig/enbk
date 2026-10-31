@@ -26,7 +26,7 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between">
         {/* Brand Logo & Status */}
-        <Link href="#" className="flex items-center gap-3 group">
+        <Link href="/" className="flex items-center gap-3 group">
           <div className="relative flex items-center justify-center w-9 h-9 rounded-lg bg-slate-900/90 border border-slate-800 group-hover:border-cyan-500/50 transition-all">
             <span className="font-mono font-bold text-sm text-cyan-400 group-hover:text-cyan-300 transition-colors">
               E
@@ -45,30 +45,42 @@ export function Navbar() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
-            <span className="text-slate-300">Online / Building</span>
+            <span className="text-slate-300">Catálogo Ativo</span>
           </div>
         </Link>
 
-        {/* Navigation Anchors */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
-          <a
-            href="#sobre"
+        {/* Navigation Anchors with Next.js Link */}
+        <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-slate-400">
+          <Link
+            href="/#sobre"
             className="hover:text-cyan-400 transition-colors hover:underline underline-offset-8 decoration-cyan-500/40"
           >
             Sobre
-          </a>
-          <a
-            href="#projetos"
+          </Link>
+          <Link
+            href="/#projetos"
             className="hover:text-cyan-400 transition-colors hover:underline underline-offset-8 decoration-cyan-500/40"
           >
-            Projetos
-          </a>
-          <a
-            href="#contato"
+            Catálogo
+          </Link>
+          <Link
+            href="/#arquitetura"
+            className="hover:text-cyan-400 transition-colors hover:underline underline-offset-8 decoration-cyan-500/40"
+          >
+            Arquitetura
+          </Link>
+          <Link
+            href="/#faq"
+            className="hover:text-cyan-400 transition-colors hover:underline underline-offset-8 decoration-cyan-500/40"
+          >
+            FAQ
+          </Link>
+          <Link
+            href="/#contato"
             className="hover:text-cyan-400 transition-colors hover:underline underline-offset-8 decoration-cyan-500/40"
           >
             Contato
-          </a>
+          </Link>
         </nav>
 
         {/* Direct Action */}
@@ -89,7 +101,9 @@ export function Navbar() {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-2 rounded-lg bg-slate-900/80 border border-slate-800 text-slate-400 hover:text-white"
-            aria-label="Abrir menu"
+            aria-label={mobileMenuOpen ? "Fechar menu de navegação" : "Abrir menu de navegação"}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-navigation"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -98,32 +112,70 @@ export function Navbar() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden px-6 pt-3 pb-6 bg-[#06080D]/95 border-b border-slate-800 backdrop-blur-xl flex flex-col gap-4 animate-in fade-in duration-200">
+        <div id="mobile-navigation" className="md:hidden px-6 pt-3 pb-6 bg-[#06080D]/95 border-b border-slate-800 backdrop-blur-xl flex flex-col gap-4 animate-in fade-in duration-200">
           <div className="flex items-center gap-2 py-2 text-xs font-mono text-emerald-400">
             <span className="h-2 w-2 rounded-full bg-emerald-500 animate-ping" />
-            <span>Status: Online / Building</span>
+            <span>Status: Catálogo Ativo</span>
           </div>
-          <a
-            href="#sobre"
+          <Link
+            href="/#sobre"
             onClick={() => setMobileMenuOpen(false)}
             className="text-base text-slate-300 hover:text-cyan-400 py-1"
           >
             Sobre
-          </a>
-          <a
-            href="#projetos"
+          </Link>
+          <Link
+            href="/#projetos"
             onClick={() => setMobileMenuOpen(false)}
             className="text-base text-slate-300 hover:text-cyan-400 py-1"
           >
-            Projetos
-          </a>
-          <a
-            href="#contato"
+            Catálogo de Sistemas
+          </Link>
+          <Link
+            href="/#arquitetura"
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-base text-slate-300 hover:text-cyan-400 py-1"
+          >
+            Arquitetura
+          </Link>
+          <Link
+            href="/#faq"
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-base text-slate-300 hover:text-cyan-400 py-1"
+          >
+            FAQ
+          </Link>
+          <Link
+            href="/#contato"
             onClick={() => setMobileMenuOpen(false)}
             className="text-base text-slate-300 hover:text-cyan-400 py-1"
           >
             Contato
-          </a>
+          </Link>
+          <div className="pt-2 border-t border-slate-800 flex flex-col gap-2">
+            <span className="text-[11px] font-mono uppercase text-slate-500">Atalhos dos Sistemas:</span>
+            <Link
+              href="/enbik"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-xs font-mono text-cyan-300 hover:underline"
+            >
+              • ENBIK ERP (/enbik)
+            </Link>
+            <Link
+              href="/kofre"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-xs font-mono text-cyan-300 hover:underline"
+            >
+              • Kofre (/kofre)
+            </Link>
+            <Link
+              href="/controle-cheques"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-xs font-mono text-cyan-300 hover:underline"
+            >
+              • Controle Inteligente de Cheques (/controle-cheques)
+            </Link>
+          </div>
           <a
             href="https://wa.me/595994195695"
             target="_blank"

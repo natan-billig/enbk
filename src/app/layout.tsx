@@ -19,6 +19,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://enbk.vercel.app"),
   title: "ENBK • Software Engineering & Soluções Digitais",
   description:
     "Catálogo e portfólio oficial de engenharia de software de Natan Billig. Soluções de alta performance, ERP SaaS, controle financeiro multi-moeda e automações bancárias com IA.",

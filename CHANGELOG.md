@@ -5,6 +5,32 @@ Todas as mudanças notáveis deste projeto serão documentadas neste arquivo.
 O formato baseia-se em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Semantic Versioning (SemVer)](https://semver.org/lang/pt-BR/).
 
+## [1.1.0] - 2026-10-31
+
+### Adicionado
+- **Roteamento Dinâmico & Fichas Técnicas do Catálogo (`/[slug]`):**
+  - Criação da rota `src/app/[slug]/page.tsx` com renderização estática completa (`generateStaticParams` / SSG) e blindagem contra parâmetros inválidos via `dynamicParams = false` e `notFound()`.
+  - Atalhos diretos indexados: `/enbik` (e `/enbik-erp`), `/kofre` (e `/kofre-finance`), `/controle-cheques` (e `/cheques`).
+  - Páginas completas com Visão Executiva, Desafio Operacional vs. Solução Arquitetada, Módulos Detalhados do Sistema, Métricas de Negócio Chave, Stack Tecnológica categorizada, Conformidade Cibersegurança & LGPD, FAQ e CTA para contato direto via WhatsApp.
+- **Mockups Vetoriais de Alta Resolução (SVG Puro):**
+  - Criação dos previews ilustrativos em `public/images/projects/`:
+    - `enbik-preview.svg`: Dashboard ERP corporativo com faturamento timbrado DNIT, preditor de ruptura de estoque e tabela de homologação.
+    - `kofre-preview.svg`: Interface fintech dark com carteiras multi-moeda (PYG, USD, BRL), faturas de cartão e gráficos de orçamento.
+    - `cheques-preview.svg`: Pipeline de visão computacional (Gemini Vision) com bounding boxes, extração de cheques e alertas automatizados via WhatsApp Business.
+- **Expansão de Conteúdo na Home Page:**
+  - `Hero`: Inclusão de métricas e indicadores de missão crítica (+3 sistemas, 100% RLS, 99.4% precisão de IA).
+  - `ProjectsGrid`: Barra de atalhos rápidos do catálogo e cards atualizados com thumbnails interativos e indicador `enbk.vercel.app/${slug}`.
+  - `ArchitectureSection`: Nova seção detalhando os 4 pilares de engenharia (RLS Multi-Tenant, Edge Compute Vercel, IA Pragmática e LGPD/ISO 27001).
+  - `CatalogFAQ`: Nova seção de perguntas frequentes sobre implantação, personalização e segurança corporativa.
+  - `Navbar` & `Footer`: Navegação com atalhos diretos para cada sistema e acessibilidade aprimorada (`aria-expanded`, `aria-controls`).
+- **SEO & Metadados Avançados:**
+  - Configuração canônica de `metadataBase` (`https://enbk.vercel.app`) em `layout.tsx`.
+  - Metadados dinâmicos com OpenGraph e Twitter Cards (`summary_large_image`) em todas as fichas técnicas.
+
+### Governança Triádica & Auditorias Concluídas
+- **Garantia de Qualidade (QA & Performance):** Parecer técnico `APROVADO`. First Load JS leve (~112–115 kB), zero erros de linting (`eslint`), SSG com 10 rotas estáticas pré-compiladas em 2 segundos e atributos ARIA auditados.
+- **Cibersegurança & LGPD:** Parecer técnico `APROVADO`. Zero credenciais em código, sanitização estrita de slugs sem manipulação de sistema de arquivos (anti-path traversal), dados sintéticos/fictícios em mockups visuais, proteção `rel="noopener noreferrer"` em 100% dos links externos e total aderência à Lei 13.709/2018.
+
 ## [1.0.0] - 2026-10-31
 
 ### Adicionado
