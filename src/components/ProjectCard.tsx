@@ -44,14 +44,15 @@ export function ProjectCard({ project }: ProjectCardProps) {
       {/* Visual Image Mockup / Thumbnail with Link */}
       <Link
         href={`/${project.slug}`}
-        className="relative block w-full aspect-[16/9] overflow-hidden bg-slate-950 border-b border-slate-800/80 cursor-pointer"
+        className="relative block w-full aspect-[16/10] overflow-hidden bg-slate-950 border-b border-slate-800/80 cursor-pointer"
         aria-label={`Ver detalhes do ${project.name}`}
       >
         <Image
           src={project.previewImage}
           alt={`Preview da interface de ${project.name}`}
           width={600}
-          height={338}
+          height={375}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60 pointer-events-none" />

@@ -26,8 +26,9 @@ export function ProfileAvatar({ className = "", size = 160 }: ProfileAvatarProps
               alt="Natan Billig"
               width={size}
               height={size}
-              className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
               priority
+              sizes="(max-width: 640px) 140px, 160px"
+              className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
               onError={() => setUsePhoto(false)}
             />
           ) : (
@@ -36,8 +37,9 @@ export function ProfileAvatar({ className = "", size = 160 }: ProfileAvatarProps
               alt="Natan Billig - NB Avatar"
               width={size}
               height={size}
-              className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
               priority
+              sizes="(max-width: 640px) 140px, 160px"
+              className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             />
           )}
         </div>
