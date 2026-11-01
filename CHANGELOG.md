@@ -5,6 +5,37 @@ Todas as mudanças notáveis deste projeto serão documentadas neste arquivo.
 O formato baseia-se em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Semantic Versioning (SemVer)](https://semver.org/lang/pt-BR/).
 
+## [1.5.0] - 2026-11-01
+
+### Adicionado / Galerias de Telas Reais & Detalhamento Profundo de Opções
+- **Galerias de Módulos & Telas Reais por Sistema (12 Telas em Alta Definição 16:10):**
+  - **ENBIK ERP (`/enbik`):**
+    * *Panel Ejecutivo BI & Control Estratégico* (`enbik/dashboard.png`): Curvas de facturación, márgenes brutos, liquidación de IVA DNIT Formulario 120 y alertas de ruptura.
+    * *Facturación Timbrada DNIT & Módulo Comercial* (`enbik/ventas.png`): Talonarios timbrados, consulta en línea de RUC, desglose IVA 10%/5%/Exentas y emisión de facturas.
+    * *Inventario Crítico, Lotes & Predictivo de Reposición* (`enbik/estoque.png`): Control multi-depósito, Costo Promedio Ponderado (CPP), trazabilidad de lotes y fechas de vencimiento.
+    * *Tesorería Corporativa & Conciliación Multimoneda* (`enbik/financeiro.png`): Cuentas a cobrar/pagar, motor cambiario (PYG, USD, BRL) y flujo de caja proyectado.
+  - **Kofre (`/kofre`):**
+    * *Panel Patrimonial Multimoneda Consolidado* (`kofre/dashboard.png`): Saldos unificados en PYG, USD y BRL, índice de salud financiera y ratio DTI.
+    * *Gestor Inteligente de Tarjetas de Crédito* (`kofre/cards.png`): Mastercard Black, alerta del "Mejor Día de Compra", fechas de cierre y proyección de cuotas a 24 meses.
+    * *Distribución de Gastos & Presupuesto por Sobres* (`kofre/categories.png`): Gráficos analíticos de dispersión de egresos, techos mensuales y fondo de reserva para emergencias.
+    * *Historial de Transacciones & Registro Ultrarrápido* (`kofre/transactions.png`): Feed de movimientos con buscador, calculadora integrada y división de cuentas compartilhadas (Split Bill).
+  - **Control Inteligente de Cheques (`/controle-cheques`):**
+    * *Dashboard de Custodia & Pipeline Bancario* (`cheques/dashboard.png`): Pipeline de títulos (En Cartera, Descontados, Compensados, Rechazados) y concentración por banco (Sudameris, GNB, Continental).
+    * *Cartera Integral de Cheques en Custodia* (`cheques/cartera.png`): Nómina interactiva con filtros por vencimiento, búsqueda por librador y exportación Excel XLSX nativa.
+    * *Gestión de Clientes Libradores & Scoring de Crédito* (`cheques/clientes.png`): Calificación crediticia, cupos de riesgo y configuración de WhatsApp para avisos preventivos.
+    * *Costos de Liquidación & Simulación de Descuento* (`cheques/custos.png`): Simulador de Costo Financiero Total (CFT), tasas bancarias y cálculo de importe neto a acreditar.
+- **Componente Interativo `ProjectGallery.tsx`:**
+  - Navegador de abas com conformidade estrita WAI-ARIA (`role="tablist"`, `role="tab"`, `role="tabpanel"` e `aria-selected`).
+  - Container responsivo com proporção nativa 16:10 para eliminação de Cumulative Layout Shift (CLS = 0.00).
+  - Checklists de capacidades e botões de ação para cada tela.
+- **Segurança da Informação e Anonimização Estrita:**
+  - Mitigação de vulnerabilidades (VULN-01 a VULN-04): 100% dos dados nas imagens de cheques foram sintetizados com titulares genéricos (`SAN BLAS S.A.`), números de cheques fictícios e telefone mascarado (`+595 981 000 000`).
+  - Purga e destruição permanente de scripts temporários com credenciais no diretório `scratch/`.
+
+### Governança Triádica & Auditorias Concluídas
+- **QA & Performance (`qa-performance-validator`):** `[APROVADO]` — Build estático de 10 rotas com First Load JS estável, 0 CLS e acessibilidade WAI-ARIA compliant.
+- **Cibersegurança & LGPD (`cybersecurity-lgpd-auditor`):** `[APROVADO]` — Higienização integral de PII e dados bancários, conformidade plena com a LGPD (Lei 13.709/2018) e ISO 27001/27701.
+
 ## [1.4.0] - 2026-10-31
 
 ### Adicionado / Identidade Visual & Branding Oficial

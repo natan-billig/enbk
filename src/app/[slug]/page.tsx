@@ -8,6 +8,7 @@ import {
   getAllProjectSlugs,
   ProjectItem,
 } from "@/data/projects";
+import { ProjectGallery } from "@/components/ProjectGallery";
 import {
   ArrowLeft,
   CheckCircle2,
@@ -185,29 +186,6 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           </div>
         </section>
 
-        {/* Visual Mockup & Interface Preview */}
-        <section className="space-y-4">
-          <div className="relative rounded-2xl overflow-hidden border border-slate-800/90 bg-slate-950 shadow-2xl shadow-cyan-950/20 group">
-            <div className="absolute inset-0 bg-gradient-to-t from-[#06080D] via-transparent to-transparent opacity-10 pointer-events-none z-10" />
-            <Image
-              src={project.previewImage}
-              alt={`Interfaz del sistema ${project.name}`}
-              width={1200}
-              height={750}
-              priority
-              sizes="(max-width: 1280px) 100vw, 1200px"
-              className="w-full h-auto object-cover rounded-xl transition-transform duration-700 group-hover:scale-[1.01]"
-            />
-          </div>
-          <div className="flex items-center justify-between text-xs font-mono text-slate-400 px-2">
-            <div className="flex items-center gap-2">
-              <Terminal className="w-3.5 h-3.5 text-cyan-400" />
-              <span>Panel operativo y módulos integrados</span>
-            </div>
-            <span>Estado de Infra: 100% Operacional</span>
-          </div>
-        </section>
-
         {/* Executive Summary & Narrative */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           <div className="lg:col-span-7 space-y-4">
@@ -235,6 +213,11 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             </ul>
           </div>
         </section>
+
+        {/* Interactive Multi-Screenshot Gallery with Detailed Options */}
+        {project.gallery && project.gallery.length > 0 && (
+          <ProjectGallery gallery={project.gallery} projectName={project.name} />
+        )}
 
         {/* Problem vs. Solution Breakdown */}
         <section className="space-y-8">
