@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { Terminal } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,7 +15,7 @@ export function Footer() {
               <span className="text-sm font-medium text-slate-300">Catálogo Oficial de Sistemas</span>
             </div>
             <p className="text-xs text-slate-400">
-              Engenharia de software de alta performance, governança e cibersegurança por Natan Billig.
+              Ingeniería de software de alto rendimiento, gobernanza y ciberseguridad por Natan Billig.
             </p>
           </div>
 
@@ -36,10 +35,10 @@ export function Footer() {
         </div>
 
         <div className="pt-6 border-t border-slate-800/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-400">
-          <p>© {currentYear} ENBK • Arquitetado por Natan Billig</p>
+          <p>© {currentYear} ENBK • Diseñado por Natan Billig</p>
           <div className="flex items-center gap-2 text-slate-400">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-            <span>Infraestrutura Verificada na Borda</span>
+            <span>Infraestructura Verificada en el Borde</span>
           </div>
         </div>
       </div>

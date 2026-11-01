@@ -11,17 +11,17 @@ interface ProjectCardProps {
 export function ProjectCard({ project }: ProjectCardProps) {
   const getStatusBadge = (status: ProjectItem["status"]) => {
     switch (status) {
-      case "Produção":
+      case "Producción":
         return {
           bg: "bg-emerald-500/10 text-emerald-400 border-emerald-500/30",
           dot: "bg-emerald-500",
         };
-      case "Ativo":
+      case "Activo":
         return {
           bg: "bg-cyan-500/10 text-cyan-300 border-cyan-500/30",
           dot: "bg-cyan-400",
         };
-      case "Em Expansão":
+      case "En Expansión":
         return {
           bg: "bg-amber-500/10 text-amber-400 border-amber-500/30",
           dot: "bg-amber-400",
@@ -31,7 +31,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
   const statusStyle = getStatusBadge(project.status);
   const whatsappUrl = `https://wa.me/595994195695?text=${encodeURIComponent(
-    `Olá Natan, gostaria de saber mais sobre a arquitetura e detalhes da solução ${project.name} (enbk.vercel.app/${project.slug}).`
+    `Hola Natan, me gustaría saber más sobre la arquitectura y detalles de la solución ${project.name} (enbk.vercel.app/${project.slug}).`
   )}`;
 
   const canonicalUrl = `enbk.vercel.app/${project.slug}`;
@@ -45,11 +45,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <Link
         href={`/${project.slug}`}
         className="relative block w-full aspect-[16/10] overflow-hidden bg-slate-950 border-b border-slate-800/80 cursor-pointer"
-        aria-label={`Ver detalhes do ${project.name}`}
+        aria-label={`Ver detalles de ${project.name}`}
       >
         <Image
           src={project.previewImage}
-          alt={`Preview da interface de ${project.name}`}
+          alt={`Preview de la interfaz de ${project.name}`}
           width={600}
           height={375}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -111,7 +111,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <div className="mt-5 pt-4 border-t border-slate-800/60">
             <h4 className="text-xs font-mono uppercase tracking-wider text-slate-400 mb-3 flex items-center gap-2">
               <Layers className="w-3.5 h-3.5 text-cyan-400" />
-              <span>Destaques de Arquitetura</span>
+              <span>Aspectos de Arquitectura</span>
             </h4>
             <ul className="space-y-2">
               {project.features.slice(0, 4).map((feature, idx) => (
@@ -152,9 +152,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 href={project.liveAppUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`Abrir sistema ${project.name} em produção`}
+                aria-label={`Abrir sistema ${project.name} en producción`}
                 className="inline-flex items-center gap-1 px-2.5 py-2 rounded-lg text-xs font-mono font-medium text-emerald-400 bg-emerald-950/30 hover:bg-emerald-900/40 border border-emerald-500/30 hover:border-emerald-400/60 transition-colors"
-                title="Acessar Sistema em Produção"
+                title="Acceder al Sistema en Producción"
               >
                 <span>App</span>
                 <ExternalLink className="w-3 h-3" />
@@ -165,9 +165,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`Consultar ${project.name} no WhatsApp`}
+              aria-label={`Consultar sobre ${project.name} por WhatsApp`}
               className="p-2 rounded-lg text-slate-400 hover:text-white bg-slate-800/60 hover:bg-slate-800 border border-slate-700/70 transition-colors"
-              title="Falar no WhatsApp"
+              title="Hablar por WhatsApp"
             >
               <ExternalLink className="w-4 h-4" />
             </a>

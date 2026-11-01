@@ -45,7 +45,7 @@ export function Navbar() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
-            <span className="text-slate-300">Catálogo Ativo</span>
+            <span className="text-slate-300">Catálogo Activo</span>
           </div>
         </Link>
 
@@ -55,7 +55,7 @@ export function Navbar() {
             href="/#sobre"
             className="hover:text-cyan-400 transition-colors hover:underline underline-offset-8 decoration-cyan-500/40"
           >
-            Sobre
+            Acerca de
           </Link>
           <Link
             href="/#projetos"
@@ -67,7 +67,7 @@ export function Navbar() {
             href="/#arquitetura"
             className="hover:text-cyan-400 transition-colors hover:underline underline-offset-8 decoration-cyan-500/40"
           >
-            Arquitetura
+            Arquitectura
           </Link>
           <Link
             href="/#faq"
@@ -79,7 +79,7 @@ export function Navbar() {
             href="/#contato"
             className="hover:text-cyan-400 transition-colors hover:underline underline-offset-8 decoration-cyan-500/40"
           >
-            Contato
+            Contacto
           </Link>
         </nav>
 
@@ -92,7 +92,7 @@ export function Navbar() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-mono font-semibold uppercase tracking-wider bg-cyan-950/40 hover:bg-cyan-900/60 text-cyan-400 border border-cyan-800/50 hover:border-cyan-400/80 transition-all duration-300 shadow-sm hover:shadow-[0_0_15px_rgba(6,182,212,0.25)]"
           >
             <Sparkles className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
-            <span>Falar no WhatsApp</span>
+            <span>Hablar por WhatsApp</span>
           </a>
         </div>
 
@@ -101,7 +101,7 @@ export function Navbar() {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-2 rounded-lg bg-slate-900/80 border border-slate-800 text-slate-400 hover:text-white"
-            aria-label={mobileMenuOpen ? "Fechar menu de navegação" : "Abrir menu de navegação"}
+            aria-label={mobileMenuOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
             aria-expanded={mobileMenuOpen}
             aria-controls="mobile-navigation"
           >
@@ -115,14 +115,14 @@ export function Navbar() {
         <div id="mobile-navigation" className="md:hidden px-6 pt-3 pb-6 bg-[#06080D]/95 border-b border-slate-800 backdrop-blur-xl flex flex-col gap-4 animate-in fade-in duration-200">
           <div className="flex items-center gap-2 py-2 text-xs font-mono text-emerald-400">
             <span className="h-2 w-2 rounded-full bg-emerald-500 animate-ping" />
-            <span>Status: Catálogo Ativo</span>
+            <span>Estado: Catálogo Activo</span>
           </div>
           <Link
             href="/#sobre"
             onClick={() => setMobileMenuOpen(false)}
             className="text-base text-slate-300 hover:text-cyan-400 py-1"
           >
-            Sobre
+            Acerca de
           </Link>
           <Link
             href="/#projetos"
@@ -136,7 +136,7 @@ export function Navbar() {
             onClick={() => setMobileMenuOpen(false)}
             className="text-base text-slate-300 hover:text-cyan-400 py-1"
           >
-            Arquitetura
+            Arquitectura
           </Link>
           <Link
             href="/#faq"
@@ -150,10 +150,10 @@ export function Navbar() {
             onClick={() => setMobileMenuOpen(false)}
             className="text-base text-slate-300 hover:text-cyan-400 py-1"
           >
-            Contato
+            Contacto
           </Link>
           <div className="pt-2 border-t border-slate-800 flex flex-col gap-2">
-            <span className="text-[11px] font-mono uppercase text-slate-500">Atalhos dos Sistemas:</span>
+            <span className="text-[11px] font-mono uppercase text-slate-500">Accesos Rápidos a Sistemas:</span>
             <Link
               href="/enbik"
               onClick={() => setMobileMenuOpen(false)}
@@ -173,7 +173,7 @@ export function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
               className="text-xs font-mono text-cyan-300 hover:underline"
             >
-              • Controle Inteligente de Cheques (/controle-cheques)
+              • Control Inteligente de Cheques (/controle-cheques)
             </Link>
           </div>
           <a
@@ -182,7 +182,7 @@ export function Navbar() {
             rel="noopener noreferrer"
             className="mt-2 text-center py-2.5 rounded-lg text-xs font-mono font-semibold uppercase tracking-wider bg-cyan-600/20 text-cyan-300 border border-cyan-500/40"
           >
-            Falar no WhatsApp
+            Hablar por WhatsApp
           </a>
         </div>
       )}

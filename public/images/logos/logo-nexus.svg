@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 140" fill="none">
+  <defs>
+    <linearGradient id="nexus-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="60%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="nexus-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="nexus-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- NEURAL NEXUS MONOGRAM (Centered at X=75, Y=70) -->
+  <g transform="translate(15, 10)">
+    <!-- Subtle circular radar grid -->
+    <circle cx="65" cy="60" r="46" stroke="#1e293b" stroke-width="1.2" stroke-dasharray="4 4" fill="none" opacity="0.6"/>
+    <circle cx="65" cy="60" r="34" stroke="#0e7490" stroke-width="0.8" opacity="0.3" fill="#06080d" fill-opacity="0.5"/>
+
+    <!-- MONOGRAM GLYPH: Continuous geometric vector -->
+    <!-- The "E" & "N" Left Wing: 3 sharp parallel bars -->
+    <path d="M 32 36 L 56 36 M 32 60 L 52 60 M 32 84 L 56 84" 
+          stroke="url(#nexus-grad)" stroke-width="5.5" stroke-linecap="round" />
+
+    <!-- The Vertical Spine connecting them -->
+    <line points="32,36 32,84" stroke="url(#nexus-grad)" stroke-width="5.5" stroke-linecap="round" />
+
+    <!-- The "N" diagonal connector slicing across -->
+    <line points="32,36 65,84" stroke="url(#nexus-grad)" stroke-width="5" stroke-linecap="round" opacity="0.85" />
+
+    <!-- The "K" / Code Vector Right Bracket: > -->
+    <path d="M 68 40 L 94 60 L 68 80" 
+          stroke="url(#nexus-stroke)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Dynamic upward arrow accent on the K leg -->
+    <line points="78,56 100,34" stroke="#10b981" stroke-width="5" stroke-linecap="round" />
+    <circle cx="100" cy="34" r="3" fill="#34d399" filter="url(#nexus-glow)" />
+
+    <!-- Center pulse node -->
+    <circle cx="65" cy="60" r="4" fill="#38bdf8" />
+  </g>
+
+  <!-- TYPOGRAPHY: "ENBK" -->
+  <g transform="translate(160, 0)">
+    <!-- Monospace Technical Font styling with sleek kerning -->
+    <text x="0" y="78" fill="#ffffff" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="52" font-weight="900" letter-spacing="5">
+      ENBK
+    </text>
+
+    <!-- Subtitle: Digital Solutions Architecture -->
+    <text x="3" y="102" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="4">
+      SOFTWARE ARCHITECTURE &amp; LABS
+    </text>
+
+    <!-- Code bracket indicator -->
+    <text x="175" y="78" fill="#06b6d4" opacity="0.4" font-family="'JetBrains Mono', monospace" font-size="46" font-weight="300">
+      /&gt;
+    </text>
+  </g>
+</svg>

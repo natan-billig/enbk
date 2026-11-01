@@ -14,14 +14,14 @@ export function ProjectsGrid() {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/80 border border-cyan-500/30 text-xs font-mono uppercase tracking-widest text-cyan-400 mb-3">
               <Terminal className="w-3.5 h-3.5 text-cyan-400" />
-              <span>Sistemas &amp; Portfólio Ativo</span>
+              <span>Sistemas &amp; Portafolio Activo</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
               Catálogo de Sistemas ENBK
             </h2>
           </div>
           <p className="text-slate-400 text-sm max-w-md font-normal">
-            Soluções completas com arquiteturas escaláveis, foco em segurança, integridade relacional e experiência de uso de alto nível. Clique em qualquer sistema para acessar a ficha técnica completa.
+            Soluciones integrales con arquitecturas escalables, enfoque en seguridad, integridad relacional y experiencia de usuario de alto nivel. Haz clic en cualquier sistema para acceder a la ficha técnica completa.
           </p>
         </div>
 
@@ -29,7 +29,7 @@ export function ProjectsGrid() {
         <div className="mb-10 p-4 rounded-xl bg-slate-900/40 border border-slate-800/80 flex flex-wrap items-center gap-3">
           <span className="text-xs font-mono uppercase tracking-wider text-slate-400 flex items-center gap-1.5 mr-2">
             <Sparkles className="w-3 h-3 text-cyan-400" />
-            <span>Atalhos rápidos do catálogo:</span>
+            <span>Accesos rápidos del catálogo:</span>
           </span>
           {projects.map((p) => (
             <Link

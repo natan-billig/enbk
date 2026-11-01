@@ -20,13 +20,14 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://enbk.vercel.app"),
-  title: "ENBK • Software Engineering & Soluções Digitais",
+  title: "ENBK • Software Engineering & Soluciones Digitales",
   description:
-    "Catálogo e portfólio oficial de engenharia de software de Natan Billig. Soluções de alta performance, ERP SaaS, controle financeiro multi-moeda e automações bancárias com IA.",
+    "Catálogo y portafolio oficial de ingeniería de software de Natan Billig. Soluciones de alto rendimiento, ERP SaaS, control financiero multimoneda y automatizaciones bancarias con IA.",
   keywords: [
     "ENBK",
     "Natan Billig",
     "Software Engineer",
+    "Ingeniería de Software",
     "SaaS",
     "Next.js",
     "Supabase",
@@ -36,16 +37,16 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Natan Billig" }],
   openGraph: {
-    title: "ENBK • Software Engineering & Soluções Digitais",
-    description: "Catálogo oficial de sistemas e soluções de software de Natan Billig.",
+    title: "ENBK • Software Engineering & Soluciones Digitales",
+    description: "Catálogo oficial de sistemas y soluciones de software de Natan Billig.",
     type: "website",
-    locale: "pt_BR",
+    locale: "es_ES",
     siteName: "ENBK",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ENBK • Software Engineering & Soluções Digitais",
-    description: "Catálogo oficial de sistemas e soluções de software de Natan Billig.",
+    title: "ENBK • Software Engineering & Soluciones Digitales",
+    description: "Catálogo oficial de sistemas y soluciones de software de Natan Billig.",
   },
 };
 
@@ -55,7 +56,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className="dark scroll-smooth">
+    <html lang="es" className="dark scroll-smooth">
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased bg-[#06080D] text-slate-100 selection:bg-cyan-500/30 selection:text-cyan-200`}
       >

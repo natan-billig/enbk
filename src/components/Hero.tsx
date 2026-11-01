@@ -28,30 +28,30 @@ export function Hero() {
                 Natan <span className="text-gradient-cyan">Billig</span>
               </h1>
               <p className="mt-2 text-lg sm:text-xl text-slate-300 font-medium tracking-wide">
-                Desenvolvedor de Software &amp; Criador de Soluções Digitais
+                Desarrollador de Software &amp; Creador de Soluciones Digitales
               </p>
             </div>
 
             {/* Concise Bio */}
             <p className="text-slate-400 text-base sm:text-lg leading-relaxed max-w-2xl font-normal">
-              Engenharia de software de ponta a ponta: sistemas de missão crítica, governança fiscal em nuvem,
-              controle financeiro multi-moeda de alta precisão e pipelines de IA com visão computacional para eliminar
-              gargalos operacionais reais do mercado corporativo.
+              Ingeniería de software de punta a punta: sistemas de misión crítica, gobernanza fiscal en la nube,
+              control financiero multimoneda de alta precisión y pipelines de IA con visión computacional para eliminar
+              cuellos de botella operativos en el entorno corporativo.
             </p>
 
             {/* Stats / Numbers Highlight */}
             <div className="grid grid-cols-3 gap-3 py-2 max-w-lg border-y border-slate-800/80">
               <div className="text-center md:text-left">
                 <div className="text-xl sm:text-2xl font-black font-mono text-cyan-400">+3</div>
-                <div className="text-[11px] font-mono text-slate-400">Sistemas no Catálogo</div>
+                <div className="text-[11px] font-mono text-slate-400">Sistemas en Catálogo</div>
               </div>
               <div className="text-center md:text-left border-x border-slate-800/80 px-3">
                 <div className="text-xl sm:text-2xl font-black font-mono text-emerald-400">100%</div>
-                <div className="text-[11px] font-mono text-slate-400">Isolamento Multi-Tenant</div>
+                <div className="text-[11px] font-mono text-slate-400">Aislamiento Multi-Tenant</div>
               </div>
               <div className="text-center md:text-left">
                 <div className="text-xl sm:text-2xl font-black font-mono text-purple-400">99.4%</div>
-                <div className="text-[11px] font-mono text-slate-400">Acurácia IA Vision</div>
+                <div className="text-[11px] font-mono text-slate-400">Precisión IA Vision</div>
               </div>
             </div>
 
@@ -59,15 +59,15 @@ export function Hero() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 max-w-xl">
               <div className="flex items-center gap-2.5 p-3 rounded-lg bg-slate-900/50 border border-slate-800/80">
                 <Cpu className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                <span className="text-xs font-mono text-slate-300">Missão Crítica &amp; SaaS</span>
+                <span className="text-xs font-mono text-slate-300">Misión Crítica &amp; SaaS</span>
               </div>
               <div className="flex items-center gap-2.5 p-3 rounded-lg bg-slate-900/50 border border-slate-800/80">
                 <ShieldCheck className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                <span className="text-xs font-mono text-slate-300">Automação &amp; Finanças</span>
+                <span className="text-xs font-mono text-slate-300">Automatización &amp; Finanzas</span>
               </div>
               <div className="flex items-center gap-2.5 p-3 rounded-lg bg-slate-900/50 border border-slate-800/80">
                 <Zap className="w-4 h-4 text-cyan-300 flex-shrink-0" />
-                <span className="text-xs font-mono text-slate-300">IA Aplicada &amp; Visão</span>
+                <span className="text-xs font-mono text-slate-300">IA Aplicada &amp; Visión</span>
               </div>
             </div>
 
@@ -85,7 +85,7 @@ export function Hero() {
                 href="#contato"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700/80 hover:border-slate-600 transition-all duration-200"
               >
-                <span>Iniciar Contato</span>
+                <span>Iniciar Contacto</span>
               </a>
             </div>
 

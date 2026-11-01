@@ -42,8 +42,8 @@ export async function generateMetadata({
 
   if (!project) {
     return {
-      title: "Projeto Não Encontrado • Catálogo ENBK",
-      description: "O sistema solicitado não foi localizado no catálogo da ENBK.",
+      title: "Proyecto No Encontrado • Catálogo ENBK",
+      description: "El sistema solicitado no fue localizado en el catálogo de ENBK.",
     };
   }
 
@@ -82,7 +82,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
   }
 
   const whatsappUrl = `https://wa.me/595994195695?text=${encodeURIComponent(
-    `Olá Natan! Acessei a ficha técnica do ${project.name} (enbk.vercel.app/${project.slug}) e gostaria de conversar sobre implantação, arquitetura ou orçamento.`
+    `Hola Natan! Ingresé a la ficha técnica de ${project.name} (enbk.vercel.app/${project.slug}) y me gustaría conversar sobre implementación, arquitectura o cotización.`
   )}`;
 
   const canonicalUrl = `enbk.vercel.app/${project.slug}`;
@@ -97,7 +97,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             className="inline-flex items-center gap-2 text-xs sm:text-sm font-mono text-slate-400 hover:text-cyan-300 transition-colors group"
           >
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform text-cyan-400" />
-            <span>Voltar ao Catálogo ENBK</span>
+            <span>Volver al Catálogo ENBK</span>
           </Link>
 
           <div className="flex items-center gap-3">
@@ -113,7 +113,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono font-semibold bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 border border-emerald-500/40 hover:border-emerald-400 transition-all"
               >
-                <span>Acessar App</span>
+                <span>Acceder a la App</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             )}
@@ -125,7 +125,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono font-semibold bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 hover:border-cyan-400/60 transition-all"
             >
               <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-              <span>Solicitar Demonstração</span>
+              <span>Solicitar Demostración</span>
             </a>
           </div>
         </div>
@@ -143,7 +143,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               {project.version}
             </span>
             <span className="px-2.5 py-1 rounded-full text-xs font-mono bg-slate-900/80 border border-slate-800 text-slate-400">
-              Release {project.releaseDate}
+              Lanzamiento {project.releaseDate}
             </span>
           </div>
 
@@ -160,7 +160,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800 backdrop-blur-sm">
             <div className="flex flex-wrap items-center gap-3">
               <span className="text-xs font-mono uppercase tracking-wider text-slate-400">
-                Atalho no catálogo:
+                Acceso rápido:
               </span>
               <code className="px-2.5 py-1 rounded-md bg-slate-950 border border-cyan-500/30 text-cyan-300 font-mono text-xs sm:text-sm font-semibold select-all">
                 {canonicalUrl}
@@ -172,14 +172,14 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-950/40 border border-emerald-500/40 text-emerald-300 font-mono text-xs font-semibold hover:border-emerald-400 transition-colors"
                 >
-                  <span>Abrir Aplicação Oficial</span>
+                  <span>Abrir Aplicación Oficial</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               )}
             </div>
 
             <div className="text-xs font-mono text-slate-400">
-              Público-Alvo:{" "}
+              Público Objetivo:{" "}
               <span className="text-slate-200 font-medium">{project.clientSegment}</span>
             </div>
           </div>
@@ -191,7 +191,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <div className="absolute inset-0 bg-gradient-to-t from-[#06080D] via-transparent to-transparent opacity-10 pointer-events-none z-10" />
             <Image
               src={project.previewImage}
-              alt={`Interface do sistema ${project.name}`}
+              alt={`Interfaz del sistema ${project.name}`}
               width={1200}
               height={750}
               priority
@@ -202,9 +202,9 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           <div className="flex items-center justify-between text-xs font-mono text-slate-400 px-2">
             <div className="flex items-center gap-2">
               <Terminal className="w-3.5 h-3.5 text-cyan-400" />
-              <span>Painel operacional e módulos integrados</span>
+              <span>Panel operativo y módulos integrados</span>
             </div>
-            <span>Status da Infra: 100% Operacional</span>
+            <span>Estado de Infra: 100% Operacional</span>
           </div>
         </section>
 
@@ -213,7 +213,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           <div className="lg:col-span-7 space-y-4">
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight flex items-center gap-2.5">
               <Layers className="w-6 h-6 text-cyan-400" />
-              <span>Visão Executiva do Sistema</span>
+              <span>Visión Ejecutiva del Sistema</span>
             </h2>
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-normal">
               {project.description}
@@ -223,7 +223,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           <div className="lg:col-span-5 p-6 rounded-2xl bg-gradient-to-br from-slate-900/90 to-slate-950 border border-cyan-500/20 shadow-lg space-y-4">
             <h3 className="text-xs font-mono uppercase tracking-widest text-cyan-400 font-semibold flex items-center gap-2">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Destaques de Entrega</span>
+              <span>Aspectos Destacados</span>
             </h3>
             <ul className="space-y-2.5">
               {project.features.map((feature, idx) => (
@@ -240,10 +240,10 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         <section className="space-y-8">
           <div className="text-center max-w-3xl mx-auto space-y-2">
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-              O Problema Real vs. A Solução Arquitetada
+              El Problema Real vs. La Solución Diseñada
             </h2>
             <p className="text-slate-400 text-sm">
-              Engenharia direcionada a gargalos reais de produtividade, conformidade e risco financeiro.
+              Ingeniería orientada a cuellos de botella reales de productividad, cumplimiento y riesgo financiero.
             </p>
           </div>
 
@@ -252,7 +252,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <div className="p-6 sm:p-8 rounded-2xl bg-rose-950/10 border border-rose-900/30 space-y-4">
               <div className="flex items-center gap-2.5 text-rose-400 font-mono text-xs uppercase tracking-wider font-semibold">
                 <AlertTriangle className="w-4 h-4" />
-                <span>O Cenário Desafiador (Antes)</span>
+                <span>El Escenario Crítico (Antes)</span>
               </div>
               <ul className="space-y-3">
                 {project.problemSolved.map((prob, i) => (
@@ -268,7 +268,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <div className="p-6 sm:p-8 rounded-2xl bg-cyan-950/15 border border-cyan-800/40 space-y-4">
               <div className="flex items-center gap-2.5 text-cyan-400 font-mono text-xs uppercase tracking-wider font-semibold">
                 <CheckCircle2 className="w-4 h-4 text-cyan-400" />
-                <span>A Solução com {project.name}</span>
+                <span>La Solución con {project.name}</span>
               </div>
               <ul className="space-y-3">
                 {project.solutionOverview.map((sol, i) => (
@@ -287,13 +287,13 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/80 border border-cyan-500/30 text-xs font-mono uppercase tracking-widest text-cyan-400 mb-3">
               <Layers className="w-3.5 h-3.5" />
-              <span>Arquitetura Modular</span>
+              <span>Arquitectura Modular</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Módulos Principais do Sistema
+              Módulos Principales del Sistema
             </h2>
             <p className="mt-2 text-slate-400 text-sm max-w-2xl">
-              Cada componente projetado para operar com autonomia, alta coesão e baixo acoplamento.
+              Cada componente diseñado para operar con autonomía, alta cohesión y bajo acoplamiento.
             </p>
           </div>
 
@@ -332,10 +332,10 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/80 border border-emerald-500/30 text-xs font-mono uppercase tracking-widest text-emerald-400 mb-3">
               <BarChart3 className="w-3.5 h-3.5" />
-              <span>Impacto &amp; Eficiência</span>
+              <span>Impacto &amp; Eficiencia</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Métricas e Benefícios de Negócio
+              Métricas y Beneficios de Negocio
             </h2>
           </div>
 
@@ -365,10 +365,10 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/80 border border-cyan-500/30 text-xs font-mono uppercase tracking-widest text-cyan-400 mb-3">
               <Cpu className="w-3.5 h-3.5" />
-              <span>Engenharia de Software</span>
+              <span>Ingeniería de Software</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Stack Tecnológica Categorizada
+              Stack Tecnológico Categorizado
             </h2>
           </div>
 
@@ -391,14 +391,14 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           </div>
         </section>
 
-        {/* Security & LGPD Compliance */}
+        {/* Security & Data Compliance */}
         <section className="p-8 rounded-2xl bg-gradient-to-r from-slate-900/90 to-slate-950 border border-emerald-500/25 space-y-4">
           <div className="flex items-center gap-3">
             <ShieldCheck className="w-6 h-6 text-emerald-400 flex-shrink-0" />
             <div>
-              <h3 className="text-lg font-bold text-white">Governança, Cibersegurança &amp; LGPD</h3>
+              <h3 className="text-lg font-bold text-white">Gobernanza, Ciberseguridad &amp; Privacidad</h3>
               <p className="text-xs text-slate-400 font-mono">
-                Conformidade com a Lei 13.709/2018 e padrões de segurança ISO 27001
+                Conformidad con estándares ISO 27001 y normativas estrictas de protección de datos
               </p>
             </div>
           </div>
@@ -417,7 +417,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           <section className="space-y-6">
             <div className="flex items-center gap-2.5">
               <HelpCircle className="w-5 h-5 text-cyan-400" />
-              <h2 className="text-2xl font-bold text-white tracking-tight">Perguntas Frequentes</h2>
+              <h2 className="text-2xl font-bold text-white tracking-tight">Preguntas Frecuentes</h2>
             </div>
 
             <div className="space-y-4">
@@ -435,11 +435,11 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         <section className="relative rounded-2xl p-8 sm:p-12 overflow-hidden bg-gradient-to-br from-cyan-950/40 via-slate-900 to-[#06080D] border border-cyan-500/40 text-center space-y-6 shadow-[0_0_50px_rgba(6,182,212,0.15)]">
           <div className="max-w-2xl mx-auto space-y-3">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
-              Pronto para implementar o {project.name}?
+              ¿Listo para implementar {project.name}?
             </h2>
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              Converse diretamente com o desenvolvedor e arquiteto da solução para alinhar implantação, 
-              customizações para o seu fluxo corporativo ou acesso a ambiente de testes.
+              Conversa directamente con el desarrollador y arquitecto de la solución para coordinar la implementación, 
+              personalizaciones a tu flujo corporativo o acceso al entorno de prueba.
             </p>
           </div>
 
@@ -451,14 +451,14 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg text-sm font-semibold bg-cyan-500 hover:bg-cyan-400 text-slate-950 transition-all duration-200 shadow-[0_0_25px_rgba(6,182,212,0.4)]"
             >
               <Sparkles className="w-4 h-4 text-slate-950" />
-              <span>Falar Diretamente no WhatsApp</span>
+              <span>Hablar Directamente por WhatsApp</span>
             </a>
 
             <Link
               href="/#projetos"
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg text-sm font-semibold bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 transition-colors"
             >
-              <span>Ver Outros Sistemas do Catálogo</span>
+              <span>Ver Otros Sistemas del Catálogo</span>
             </Link>
           </div>
         </section>

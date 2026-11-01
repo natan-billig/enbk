@@ -28,7 +28,7 @@ export interface ProjectItem {
   name: string;
   tagline: string;
   category: string;
-  status: 'Produção' | 'Ativo' | 'Em Expansão';
+  status: 'Producción' | 'Activo' | 'En Expansión';
   version: string;
   releaseDate: string;
   clientSegment: string;
@@ -54,126 +54,126 @@ export const projects: ProjectItem[] = [
     slug: "enbik",
     aliases: ["enbik-erp"],
     name: "ENBIK ERP",
-    tagline: "Sistema Integrado de Gestão Empresarial Multi-Tenant & Governança Fiscal",
-    category: "ERP SaaS & Automação Fiscal",
-    status: "Produção",
+    tagline: "Sistema Integrado de Gestión Empresarial Multi-Tenant & Gobernanza Fiscal",
+    category: "ERP SaaS & Automatización Fiscal",
+    status: "Producción",
     version: "v2.4.0",
     releaseDate: "2026",
-    clientSegment: "Distribuidoras, Atacadistas, Agronegócio & Indústrias",
+    clientSegment: "Distribuidoras, Mayoristas, Agronegocios & Industrias",
     previewImage: "/images/projects/enbik-preview.png",
     liveAppUrl: "https://enbik.vercel.app",
     summary:
-      "Plataforma completa de gestão empresarial e governança fiscal em nuvem, projetada para alta performance operacional, isolamento estrito de dados e conformidade regulatória contínua.",
+      "Plataforma integral de gestión empresarial y gobernanza fiscal en la nube, diseñada para alto rendimiento operativo, aislamiento estricto de datos y cumplimiento regulatorio continuo.",
     description:
-      "O ENBIK ERP é uma solução SaaS corporativa desenvolvida para substituir sistemas legados lentos e fragmentados. Integra faturamento timbrado eletrônico (DNIT), gestão de compras com controle avançado de custos, monitoramento preditivo de rupturas de estoque, fluxo de caixa multi-moeda e isolamento estrito de dados por tenant via Row Level Security (RLS) no PostgreSQL.",
+      "ENBIK ERP es una solución SaaS corporativa desarrollada para reemplazar sistemas legados lentos y fragmentados. Integra facturación timbrada electrónica (DNIT), gestión de compras con control avanzado de costos, monitoreo predictivo de quiebres de stock, flujo de caja multimoneda y aislamiento estricto de datos por tenant mediante Row Level Security (RLS) en PostgreSQL.",
     problemSolved: [
-      "Processos fiscais lentos e manuais sujeitos a multas por descompasso com regras do DNIT.",
-      "Falta de visibilidade precisa sobre estoques críticos, resultando em rupturas e compras emergenciais a preços inflacionados.",
-      "Dificuldade de consolidar operações comerciais e financeiras que transacionam em múltiplas moedas (Guaraní, Dólar, Real).",
-      "Sistemas ERP tradicionais que exigem servidores locais caros, manutenção complexa e interfaces antiquadas."
+      "Procesos fiscales lentos y manuales expuestos a sanciones por desfasaje con las normativas de la DNIT.",
+      "Falta de visibilidad precisa sobre inventarios críticos, generando quiebres de stock y compras de emergencia a precios inflados.",
+      "Dificultad para consolidar operaciones comerciales y financieras que transaccionan en múltiples monedas (Guaraní, Dólar, Real).",
+      "Sistemas ERP tradicionales que requieren costosos servidores locales, mantenimiento complejo e interfaces obsoletas."
     ],
     solutionOverview: [
-      "Motor fiscal em nuvem homologado com geração, validação e transmissão instantânea de documentos timbrados.",
-      "Algoritmo preditivo de reposição baseado em giro histórico, sazonalidade e ponto de pedido ideal.",
-      "Arquitetura multi-tenant nativa com isolamento criptográfico por organização em banco relacional escalável.",
-      "Interface responsiva ultra-veloz desenvolvida em Next.js com tempos de carregamento inferiores a 200ms."
+      "Motor fiscal en la nube homologado con generación, validación y transmisión instantánea de documentos timbrados.",
+      "Algoritmo predictivo de reposición basado en rotación histórica, estacionalidad y punto de pedido óptimo.",
+      "Arquitectura multi-tenant nativa con aislamiento criptográfico por organización en base de datos relacional escalable.",
+      "Interfaz responsiva ultra veloz desarrollada en Next.js con tiempos de carga inferiores a 200ms."
     ],
     modules: [
       {
-        name: "Módulo Fiscal & Faturamento DNIT",
-        tag: "Compliance & Faturamento",
-        description: "Controle rigoroso e homologado de numeração timbrada, cálculo automatizado de tributos e validação em lote.",
+        name: "Módulo Fiscal & Facturación DNIT",
+        tag: "Compliance & Facturación",
+        description: "Control riguroso y homologado de numeración timbrada, cálculo automatizado de tributos y validación por lotes.",
         highlights: [
-          "Numeração sequencial auditada sem lacunas",
-          "Transmissão e carimbo eletrônico instantâneo",
-          "Emissão em lote de faturas e remessas",
-          "Suporte a regimes fiscais simplificados e gerais"
+          "Numeración secuencial auditada sin saltos",
+          "Transmisión y timbrado electrónico instantáneo",
+          "Emisión masiva de facturas y remisiones",
+          "Soporte para regímenes fiscales simplificados y generales"
         ]
       },
       {
-        name: "Suprimentos & Preditivo de Estoque",
-        tag: "Supply Chain",
-        description: "Rastreabilidade de lotes, cálculo automático de custo médio ponderado e alertas preventivos de ruptura.",
+        name: "Suministros & Predictivo de Inventario",
+        tag: "Cadena de Suministro",
+        description: "Trazabilidad de lotes, cálculo automático de costo promedio ponderado y alertas preventivas de quiebre.",
         highlights: [
-          "Ponto de pedido dinâmico com IA de consumo",
-          "Rastreamento de validade e controle de lotes",
-          "Entrada automatizada de pedidos de compra",
-          "Transferência ágil entre filiais e depósitos"
+          "Punto de pedido dinámico con IA de consumo",
+          "Seguimiento de vencimientos y control de lotes",
+          "Recepción automatizada de órdenes de compra",
+          "Transferencias ágiles entre sucursales y depósitos"
         ]
       },
       {
-        name: "Financeiro & Conciliação Multi-Moeda",
-        tag: "Finanças Corporativas",
-        description: "Contas a pagar e receber com baixa automática, conciliação bancária dinâmica e conversão em tempo real.",
+        name: "Finanzas & Conciliación Multimoneda",
+        tag: "Finanzas Corporativas",
+        description: "Cuentas por pagar y cobrar con liquidación automática, conciliación bancaria dinámica y conversión en tiempo real.",
         highlights: [
-          "Fluxo de caixa projetado diário/mensal",
-          "Gestão simultânea em PYG, USD e BRL",
-          "Controle de adiantamentos e liquidações parciais",
-          "DRE gerencial e relatórios de margem bruta"
+          "Flujo de caja proyectado diario y mensual",
+          "Gestión simultánea en PYG, USD y BRL",
+          "Control de anticipos y liquidaciones parciales",
+          "Estado de resultados y reportes de margen bruto"
         ]
       },
       {
-        name: "Governança & Auditoria Multi-Tenant",
-        tag: "Segurança & Dados",
-        description: "Cada empresa opera com isolamento lógico inviolável, trilha de auditoria completa e perfis de acesso granulares.",
+        name: "Gobernanza & Auditoría Multi-Tenant",
+        tag: "Seguridad & Datos",
+        description: "Cada empresa opera con aislamiento lógico inviolable, pista de auditoría completa y perfiles de acceso granulares.",
         highlights: [
-          "Políticas RLS em PostgreSQL para blindagem de dados",
-          "Log de auditoria imutável para todas as alterações",
-          "RBAC (Controle de Acesso Baseado em Funções)",
-          "Backups incrementais automáticos"
+          "Políticas RLS en PostgreSQL para blindaje de datos",
+          "Registro de auditoría inmutable para todas las modificaciones",
+          "RBAC (Control de Acceso Basado en Roles)",
+          "Copias de seguridad incrementales automáticas"
         ]
       }
     ],
     keyBenefits: [
       {
-        title: "Velocidade de Faturamento",
-        description: "Redução drástica no tempo de fechamento e emissão de notas timbradas.",
-        metric: "-85% de tempo operacional"
+        title: "Velocidad de Facturación",
+        description: "Reducción drástica en los tiempos de cierre y emisión de facturas timbradas.",
+        metric: "-85% de tiempo operativo"
       },
       {
-        title: "Prevenção de Ruptura",
-        description: "Eliminação de faltas em itens curva A graças ao ponto de pedido automatizado.",
-        metric: "99.2% de precisão de inventário"
+        title: "Prevención de Quiebres",
+        description: "Eliminación de faltantes en ítems curva A gracias al punto de pedido automatizado.",
+        metric: "99.2% de precisión de inventario"
       },
       {
-        title: "Disponibilidade e Resiliência",
-        description: "Arquitetura serverless e borda global eliminam indisponibilidades de servidores físicos.",
+        title: "Disponibilidad y Resiliencia",
+        description: "Arquitectura serverless y red global de borde que eliminan caídas de servidores físicos.",
         metric: "99.98% de Uptime"
       }
     ],
     features: [
-      "Faturamento timbrado DNIT de alta precisão",
-      "Compras e gestão avançada de custos com margens em tempo real",
-      "Estoque com monitor preditivo de ruptura e lote",
-      "Fluxo financeiro e conciliação multi-moeda dinâmica",
-      "Isolamento estrito multi-tenant com Row Level Security (RLS)",
-      "Relatórios executivos e exportação para contabilidade"
+      "Facturación timbrada DNIT de alta precisión",
+      "Compras y gestión avanzada de costos con márgenes en tiempo real",
+      "Inventario con monitor predictivo de quiebre y lotes",
+      "Flujo financiero y conciliación multimoneda dinámica",
+      "Aislamiento estricto multi-tenant con Row Level Security (RLS)",
+      "Reportes ejecutivos y exportación para contabilidad"
     ],
     techStackCategorized: [
       { category: "Frontend & UI", items: ["Next.js 15 (App Router)", "React 19", "Tailwind CSS", "Framer Motion", "Lucide Icons"] },
-      { category: "Backend & Dados", items: ["Supabase", "PostgreSQL", "Row Level Security (RLS)", "Edge Functions"] },
-      { category: "Infraestrutura & DevOps", items: ["Vercel Edge Network", "CI/CD Automatizado", "Tríade de Governança Contínua"] },
-      { category: "Conformidade & Segurança", items: ["Isolamento Multi-Tenant", "Criptografia TLS 1.3 / AES-256", "Logs de Auditoria"] }
+      { category: "Backend & Datos", items: ["Supabase", "PostgreSQL", "Row Level Security (RLS)", "Edge Functions"] },
+      { category: "Infraestructura & DevOps", items: ["Red Global Vercel Edge", "CI/CD Automatizado", "Tríada de Gobernanza Continua"] },
+      { category: "Cumplimiento & Seguridad", items: ["Aislamiento Multi-Tenant", "Cifrado TLS 1.3 / AES-256", "Registros de Auditoría"] }
     ],
     techStack: ["Next.js", "Supabase", "PostgreSQL", "Tailwind CSS", "TypeScript"],
     securityHighlights: [
-      "Isolamento estrito de banco de dados com Row Level Security (RLS)",
-      "Proteção de dados em repouso e em trânsito com TLS 1.3 e AES-256",
-      "Trilhas de auditoria imutáveis com carimbo de data/hora para compliance",
-      "Zero armazenamento de credenciais sensíveis em repositórios de código"
+      "Aislamiento estricto en base de datos con Row Level Security (RLS)",
+      "Protección de datos en reposo y en tránsito con TLS 1.3 y AES-256",
+      "Pistas de auditoría inmutables con sello de tiempo para compliance",
+      "Cero almacenamiento de credenciales sensibles en repositorios de código"
     ],
     faq: [
       {
-        question: "O ENBIK ERP suporta empresas com múltiplas filiais?",
-        answer: "Sim. O sistema foi concebido com arquitetura multi-tenant e multi-filial nativa, permitindo gerenciar estoques, faturamentos e centros de custo individuais com consolidação financeira centralizada."
+        question: "¿ENBIK ERP soporta empresas con múltiples sucursales?",
+        answer: "Sí. El sistema fue concebido con arquitectura multi-tenant y multisucursal nativa, permitiendo administrar inventarios, facturación y centros de costos individuales con consolidación financiera centralizada."
       },
       {
-        question: "Como funciona a emissão de faturamento timbrado DNIT?",
-        answer: "O sistema valida os intervalos de timbrado autorizados, controla o consumo de números e gera o documento em conformidade com as regras fiscais oficiais, evitando erros de digitação e duplicidades."
+        question: "¿Cómo funciona la emisión de facturación timbrada DNIT?",
+        answer: "El sistema valida los rangos de timbrado autorizados, controla el consumo correlativo y genera el documento en estricta conformidad con las normas fiscales oficiales, eliminando errores de digitación y duplicidades."
       },
       {
-        question: "Quais moedas o sistema suporta nativamente?",
-        answer: "Possui motor cambial nativo para Guaraní (PYG), Dólar Americano (USD) e Real Brasileiro (BRL), com cotação diária e conversão automática nos lançamentos e relatórios."
+        question: "¿Qué monedas admite el sistema de forma nativa?",
+        answer: "Cuenta con motor cambiario nativo para Guaraní (PYG), Dólar Estadounidense (USD) y Real Brasileño (BRL), con cotización diaria y conversión automática en asientos y reportes."
       }
     ],
     featured: true,
@@ -183,120 +183,120 @@ export const projects: ProjectItem[] = [
     slug: "kofre",
     aliases: ["kofre-finance"],
     name: "Kofre",
-    tagline: "Planejamento e Gestão Financeira Pessoal & Familiar Multi-Moeda",
-    category: "Fintech Pessoal & Controle Orçamentário",
-    status: "Ativo",
+    tagline: "Planificación y Gestión Financiera Personal & Familiar Multimoneda",
+    category: "Fintech Personal & Control Presupuestario",
+    status: "Activo",
     version: "v1.8.2",
     releaseDate: "2026",
-    clientSegment: "Profissionais Liberais, Famílias, Nômades Digitais & Investidores",
+    clientSegment: "Profesionales Independientes, Familias, Nómadas Digitales & Inversores",
     previewImage: "/images/projects/kofre-preview.png",
     liveAppUrl: "https://kofre-app.vercel.app",
     summary:
-      "Solução ágil de inteligência orçamentária pessoal e familiar com suporte a transações multi-moeda, gestão de limites de crédito e conciliação em tempo real.",
+      "Solución ágil de inteligencia presupuestaria personal y familiar con soporte para transacciones multimoneda, gestión de límites de crédito y conciliación en tiempo real.",
     description:
-      "O Kofre foi criado para quem vive a realidade da fronteira ou de economias abertas, onde despesas, investimentos e rendas ocorrem simultaneamente em Guaraníes, Dólares e Reais. Com gráficos analíticos em tempo real, acompanhamento do ciclo de fechamento de cartões de crédito e rateio inteligente de contas compartilhadas, o Kofre transforma a gestão financeira em um hábito simples, elegante e preciso.",
+      "Kofre fue creado para quienes viven la realidad fronteriza o de economías abiertas, donde los gastos, inversiones e ingresos ocurren simultáneamente en Guaraníes, Dólares y Reales. Con gráficos analíticos en tiempo real, seguimiento del ciclo de cierre de tarjetas de crédito y división inteligente de gastos compartidos, Kofre convierte la gestión financiera en un hábito simple, elegante y preciso.",
     problemSolved: [
-      "Dificuldade extrema em manter controle de gastos quando se utiliza mais de uma moeda no dia a dia.",
-      "Perda de controle sobre os ciclos de faturas de múltiplos cartões de crédito e suas conversões de taxa de câmbio.",
-      "Falta de clareza no rateio de despesas familiares ou entre parceiros, gerando atritos e desorganização.",
-      "Planilhas complexas, propensas a fórmulas quebradas e sem sincronização móvel instantânea."
+      "Dificultad extrema para mantener el control de gastos al utilizar más de una moneda en el día a día.",
+      "Pérdida de control sobre los ciclos de facturación de múltiples tarjetas de crédito y sus conversiones de tipo de cambio.",
+      "Falta de claridad en la división de gastos familiares o en pareja, generando fricciones y desorden.",
+      "Planillas de cálculo complejas, propensas a fórmulas rotas y sin sincronización móvil instantánea."
     ],
     solutionOverview: [
-      "Motor multi-moeda nativo com carteiras independentes e visão consolidada de patrimônio líquido em tempo real.",
-      "Painel de cartões de crédito com visualização clara de faturas abertas, limite disponível e dias até o fechamento.",
-      "Módulo colaborativo de despesas conjuntas com divisão percentual ou igualitária sem atritos.",
-      "Armazenamento em nuvem ultra-seguro com sincronização instantânea em todos os dispositivos."
+      "Motor multimoneda nativo con billeteras independientes y vista consolidada de patrimonio neto en tiempo real.",
+      "Panel de tarjetas de crédito con visualización clara de resúmenes abiertos, límite disponible y días restantes hasta el cierre.",
+      "Módulo colaborativo de gastos compartidos con división porcentual o equitativa sin fricciones.",
+      "Almacenamiento ultra seguro en la nube con sincronización instantánea en todos los dispositivos."
     ],
     modules: [
       {
-        name: "Carteiras & Motor Multi-Moeda",
-        tag: "Patrimônio & Câmbio",
-        description: "Gestão simultânea de saldos em PYG, USD e BRL com atualização dinâmica de cotações.",
+        name: "Billeteras & Motor Multimoneda",
+        tag: "Patrimonio & Divisas",
+        description: "Gestión simultánea de saldos en PYG, USD e BRL con actualización dinámica de cotizaciones.",
         highlights: [
-          "Conversão automática pela cotação do momento",
-          "Separação clara entre dinheiro em conta e investimentos",
-          "Histórico cambial e impacto de oscilações",
-          "Visão agregada do patrimônio em moeda de preferência"
+          "Conversión automática según la cotización del momento",
+          "Separación clara entre dinero disponible e inversiones",
+          "Historial cambiario e impacto de oscilaciones",
+          "Vista agregada del patrimonio en la moneda preferida"
         ]
       },
       {
-        name: "Gestor Inteligente de Cartões",
-        tag: "Crédito & Faturas",
-        description: "Acompanhamento transparente das datas de fechamento e vencimento de cada fatura.",
+        name: "Gestor Inteligente de Tarjetas",
+        tag: "Crédito & Resúmenes",
+        description: "Seguimiento transparente de fechas de cierre y vencimiento de cada tarjeta de crédito.",
         highlights: [
-          "Alerta de melhor dia de compra por cartão",
-          "Projeção de parcelas futuras em até 24 meses",
-          "Gráfico de consumo por categoria no cartão",
-          "Simulação de liquidação antecipada com desconto"
+          "Alerta del mejor día de compra por tarjeta",
+          "Proyección de cuotas futuras hasta en 24 meses",
+          "Gráfico de consumos por categoría en tarjeta",
+          "Simulación de cancelación anticipada con descuento"
         ]
       },
       {
-        name: "Rateio & Contas Compartilhadas",
-        tag: "Colaboração Familiar",
-        description: "Controle descomplicado de despesas domésticas e projetos compartilhados.",
+        name: "División & Cuentas Compartidas",
+        tag: "Colaboración Familiar",
+        description: "Control sin complicaciones de gastos del hogar y proyectos compartidos.",
         highlights: [
-          "Divisão flexível (50/50, proporcional à renda ou valores fixos)",
-          "Balanço dinâmico de quem deve a quem",
-          "Notificações suaves de liquidação de rateio",
-          "Histórico exportável de despesas conjuntas"
+          "División flexible (50/50, proporcional a ingresos o montos fijos)",
+          "Balance dinámico de quién debe a quién",
+          "Notificaciones cordiales de liquidación de cuentas",
+          "Historial exportable de gastos conjuntos"
         ]
       },
       {
-        name: "Metas & Orçamentação Baseada em Envelopes",
-        tag: "Planejamento Financeiro",
-        description: "Metas de curto, médio e longo prazo com acompanhamento visual de progresso.",
+        name: "Metas & Presupuesto por Sobres",
+        tag: "Planificación Financiera",
+        description: "Objetivos de corto, mediano y largo plazo con seguimiento visual de progreso.",
         highlights: [
-          "Tetos orçamentários com barras visuais de segurança",
-          "Reserva de emergência monitorada",
-          "Projeção de alcance de metas financeiras",
-          "Alertas de aproximação do limite mensal"
+          "Topes presupuestarios con barras visuales de seguridad",
+          "Fondo de emergencia monitoreado",
+          "Proyección de alcance de metas financieras",
+          "Alertas de proximidad al límite mensual"
         ]
       }
     ],
     keyBenefits: [
       {
-        title: "Clareza Patrimonial Total",
-        description: "Visão exata de quanto você possui em qualquer moeda sem conversões manuais de cabeça.",
-        metric: "100% dos saldos unificados"
+        title: "Claridad Patrimonial Total",
+        description: "Visión exacta de cuánto posees en cualquier moneda sin conversiones mentales.",
+        metric: "100% de saldos unificados"
       },
       {
-        title: "Economia de Tarifas e Juros",
-        description: "Prevenção contra atrasos de faturas e compras fora do melhor ciclo de fechamento.",
-        metric: "Zero juros por atraso de cartão"
+        title: "Ahorro en Comisiones e Intereses",
+        description: "Prevención contra retrasos de resúmenes y compras fuera del ciclo óptimo.",
+        metric: "Cero intereses por retraso de tarjeta"
       },
       {
-        title: "Agilidade de Lançamento",
-        description: "Adicione qualquer receita ou despesa em menos de 5 segundos.",
+        title: "Agilidad de Registro",
+        description: "Registra cualquier ingreso o gasto en menos de 5 segundos.",
         metric: "< 5s para registrar gasto"
       }
     ],
     features: [
-      "Arquitetura multi-moeda nativa (PYG, USD, BRL)",
-      "Rateio inteligente de contas e despesas compartilhadas",
-      "Ciclos de faturas de cartão de crédito e simulação de parcelamentos",
-      "Conciliação orçamentária em tempo real",
-      "Visualização analítica de patrimônio, metas e reservas",
-      "Exportação de dados e segurança de nível bancário"
+      "Arquitectura multimoneda nativa (PYG, USD, BRL)",
+      "División inteligente de cuentas y gastos compartidos",
+      "Ciclos de resúmenes de tarjeta de crédito y simulación de cuotas",
+      "Conciliación presupuestaria en tiempo real",
+      "Visualización analítica de patrimonio, metas y reservas",
+      "Exportación de datos y seguridad de nivel bancario"
     ],
     techStackCategorized: [
       { category: "Frontend & PWA", items: ["React", "Vite", "Tailwind CSS", "TypeScript", "Lucide React"] },
-      { category: "Backend & Realtime", items: ["Supabase Realtime", "PostgreSQL", "Edge Functions"] },
-      { category: "Segurança de Dados", items: ["Criptografia AES-256", "Sessões JWT Seguras", "LGPD Compliance"] }
+      { category: "Backend & Tiempo Real", items: ["Supabase Realtime", "PostgreSQL", "Edge Functions"] },
+      { category: "Seguridad de Datos", items: ["Cifrado AES-256", "Sesiones JWT Seguras", "Cumplimiento de Privacidad"] }
     ],
     techStack: ["React", "Vite", "Supabase Realtime", "Tailwind CSS", "TypeScript"],
     securityHighlights: [
-      "Isolamento integral de dados por usuário com autenticação criptografada",
-      "Privacidade estrita: nenhuma informação financeira é compartilhada com terceiros",
-      "Backups criptografados contínuos com retenção segura"
+      "Aislamiento total de datos por usuario con autenticación cifrada",
+      "Privacidad estricta: ninguna información financiera se comparte con terceros",
+      "Copias de seguridad cifradas continuas con retención segura"
     ],
     faq: [
       {
-        question: "O Kofre precisa de conexão bancária obrigatória (Open Finance)?",
-        answer: "Não. O Kofre preza pela sua privacidade total. O usuário tem total controle sobre os lançamentos, permitindo importação rápida ou controle manual sem expor senhas bancárias."
+        question: "¿Kofre requiere conexión bancaria obligatoria (Open Finance)?",
+        answer: "No. Kofre prioriza tu privacidad absoluta. El usuario mantiene el control total de los registros, permitiendo importación rápida o control manual sin exponer credenciales bancarias."
       },
       {
-        question: "Como funciona a conversão entre moedas no Kofre?",
-        answer: "Você pode lançar transações na moeda original (por exemplo, USD ou Guaraní) e o Kofre mantém o valor histórico da transação, além de converter para a moeda base do seu painel patrimonial."
+        question: "¿Cómo funciona la conversión entre monedas en Kofre?",
+        answer: "Puedes registrar transacciones en la moneda original (por ejemplo, USD o Guaraní) y Kofre preserva el valor histórico de la operación, además de convertir a la moneda base de tu panel patrimonial."
       }
     ],
     featured: true,
@@ -305,122 +305,122 @@ export const projects: ProjectItem[] = [
     id: "controle-cheques",
     slug: "controle-cheques",
     aliases: ["cheques"],
-    name: "Controle Inteligente de Cheques",
-    tagline: "Automação Bancária com Leitura de Imagem por IA & Alertas WhatsApp",
-    category: "IA Aplicada & Automação de Processos",
-    status: "Ativo",
+    name: "Control Inteligente de Cheques",
+    tagline: "Automatización Bancaria con Lectura de Imagen por IA & Alertas de WhatsApp",
+    category: "IA Aplicada & Automatización de Procesos",
+    status: "Activo",
     version: "v1.2.5",
     releaseDate: "2026",
-    clientSegment: "Comércio Atacadista, Concessionárias, Factoring & Cooperativas",
+    clientSegment: "Comercio Mayorista, Concesionarias, Factoring & Cooperativas",
     previewImage: "/images/projects/cheques-preview.png",
     liveAppUrl: "https://controle-cheques-rosy.vercel.app",
     summary:
-      "Pipeline automatizado de processamento documental que digitaliza cheques com visão computacional de alta fidelidade e notifica prazos críticos via mensageria corporativa.",
+      "Pipeline automatizado de procesamiento documental que digitaliza cheques con visión computacional de alta fidelidad y notifica plazos críticos mediante mensajería corporativa.",
     description:
-      "O Controle Inteligente de Cheques resolve o problema da custódia e liquidação de recebíveis em cheques pré-datados. Ao tirar uma foto do cheque no celular ou webcam, o modelo de visão computacional da Google (Gemini Vision) extrai instantaneamente o valor numérico, valor por extenso, data de emissão, 'bom para' (vencimento), banco emissor e beneficiário. As datas são agendadas e alertas preventivos automáticos são disparados via WhatsApp Business para clientes e gestores financeiros antes da compensação.",
+      "Control Inteligente de Cheques resuelve el problema de la custodia y liquidación de cheques diferidos y a cobrar. Al tomar una fotografía del cheque con el teléfono móvil o cámara, el modelo de visión multimodal de Google (Gemini Vision) extrae instantáneamente el importe numérico, importe en letras, fecha de emisión, fecha de vencimiento ('bueno para'), banco emisor y beneficiario. Las fechas se programan y se disparan alertas preventivas automáticas por WhatsApp Business a clientes y gestores de tesorería antes de la compensación.",
     problemSolved: [
-      "Custódia desorganizada em gavetas ou pastas com riscos de cheques esquecidos ou devolvidos por insuficiência de fundos.",
-      "Digitação manual demorada e suscetível a erros de valores e datas de compensação.",
-      "Falta de aviso prévio aos emissores, resultando em atritos comerciais e necessidade de reapresentação de folhas.",
-      "Dificuldade de conciliar o saldo real em conta com os cheques que entrarão em compensação nos próximos dias."
+      "Custodia desorganizada en carpetas o gavetas con riesgo de cheques olvidados o rechazados por fondos insuficientes.",
+      "Carga manual lenta y susceptible a errores de importes y fechas de compensación.",
+      "Falta de aviso previo a los libradores, generando fricciones comerciales y necesidad de representación de documentos.",
+      "Dificultad para conciliar el saldo real en cuenta con los cheques que entrarán en compensación en los próximos días."
     ],
     solutionOverview: [
-      "Pipeline de Visão Computacional com taxa de acerto de 99.4% na extração de valores, datas e dados do emissor.",
-      "Indexação estruturada automática em banco de dados relacional com categorização por data de liquidação.",
-      "Robô de notificações via WhatsApp que avisa o emissor em D-2 e a tesouraria no dia do depósito.",
-      "Painel de conciliação bancária que antecipa o impacto no fluxo de caixa líquido."
+      "Pipeline de Visión Computacional con tasa de precisión del 99.4% en la extracción de importes, fechas y datos del librador.",
+      "Indexación estructurada automática en base de datos relacional con categorización por fecha de liquidación.",
+      "Bot de notificaciones vía WhatsApp que avisa al librador en D-2 y a la tesorería el día del depósito.",
+      "Panel de conciliación bancaria que anticipa el impacto en el flujo de caja neto."
     ],
     modules: [
       {
-        name: "Scanner & Reconhecimento por IA",
+        name: "Escáner & Reconocimiento por IA",
         tag: "Computer Vision",
-        description: "Processamento de imagens de cheques em tempo real com identificação de campos manuscritos e impressos.",
+        description: "Procesamiento de imágenes de cheques en tiempo real con identificación de campos manuscritos e impresos.",
         highlights: [
-          "Bounding boxes visuais para auditoria do operador",
-          "Validação cruzada entre valor numérico e valor por extenso",
-          "Reconhecimento da linha de código de barras CMC7 / MICR",
-          "Tratamento automático de perspectiva e iluminação"
+          "Cuadros delimitadores visuales para auditoría del operador",
+          "Validación cruzada entre importe numérico y en letras",
+          "Reconocimiento de la línea de código de barras CMC7 / MICR",
+          "Corrección automática de perspectiva e iluminación"
         ]
       },
       {
         name: "Motor de Alertas WhatsApp",
-        tag: "Mensageria Automatizada",
-        description: "Envio de lembretes polidos e profissionais diretamente para o número do emitente.",
+        tag: "Mensajería Automatizada",
+        description: "Envío de recordatorios cordiales y profesionales directamente al contacto del librador.",
         highlights: [
-          "Disparo programado (D-2 dias antes da compensação)",
-          "Confirmação de recebimento com status de leitura",
-          "Possibilidade de reagendamento controlado via bot",
-          "Histórico de mensagens associado ao registro do cheque"
+          "Envío programado (D-2 días antes de la compensación)",
+          "Confirmación de entrega con estado de lectura",
+          "Posibilidad de reprogramación controlada vía bot",
+          "Historial de mensajes asociado al registro del cheque"
         ]
       },
       {
-        name: "Custódia & Linha do Tempo de Liquidação",
-        tag: "Tesouraria & Caixa",
-        description: "Organização visual em calendário e tabela dos cheques sob custódia e depositados.",
+        name: "Custodia & Línea de Tiempo de Liquidación",
+        tag: "Tesorería & Caja",
+        description: "Organización visual en calendario y tabla de los cheques en custodia y depositados.",
         highlights: [
-          "Agrupamento por banco favorecido",
-          "Identificação imediata de cheques devolvidos para reapresentação",
-          "Relatório de títulos a vencer na semana ou mês",
-          "Controle de custódia física vs. custódia bancária"
+          "Agrupación por banco beneficiario",
+          "Identificación inmediata de cheques devueltos para representación",
+          "Reporte de valores a vencer en la semana o el mes",
+          "Control de custodia física vs. custodia bancaria"
         ]
       },
       {
-        name: "Conciliação & Auditoria Bancária",
-        tag: "Governança Contábil",
-        description: "Integração do saldo previsto com o saldo realizado em extrato bancário.",
+        name: "Conciliación & Auditoría Bancaria",
+        tag: "Gobernanza Contable",
+        description: "Integración del saldo proyectado con el saldo conciliado del extracto bancario.",
         highlights: [
-          "Baixa automática com comprovante de depósito",
-          "Trilha de auditoria com foto original do cheque arquivada com segurança",
-          "Exportação para conciliação contábil em CSV/Excel",
-          "Métricas de inadimplência e histórico por cliente"
+          "Baja automática con comprobante de depósito",
+          "Pista de auditoría con imagen original del cheque resguardada con seguridad",
+          "Exportación para conciliación contable en CSV/Excel",
+          "Métricas de morosidad e historial por cliente"
         ]
       }
     ],
     keyBenefits: [
       {
-        title: "Zero Cheques Esquecidos",
-        description: "Controle cronológico absoluto que garante que 100% dos cheques sejam depositados na data combinada.",
-        metric: "100% dos títulos compensados no prazo"
+        title: "Cero Cheques Olvidados",
+        description: "Control cronológico absoluto que garantiza que el 100% de los cheques se depositen en la fecha acordada.",
+        metric: "100% de valores cobrados a término"
       },
       {
-        title: "Tempo de Cadastro por Folha",
-        description: "De 2 minutos de digitação manual para apenas 1.2 segundos via IA de visão.",
-        metric: "1.2s tempo de extração por foto"
+        title: "Tiempo de Carga por Documento",
+        description: "De 2 minutos de tipeo manual a tan solo 1.2 segundos mediante IA de visión.",
+        metric: "1.2s tiempo de extracción por foto"
       },
       {
-        title: "Redução de Devoluções por Fundo",
-        description: "Aviso amigável prévio no WhatsApp reduz drasticamente o susto e a falta de saldo.",
-        metric: "-70% de devoluções de cheques"
+        title: "Reducción de Rechazos por Fondos",
+        description: "El aviso cordial preventivo por WhatsApp reduce drásticamente las devoluciones involuntarias.",
+        metric: "-70% de cheques devueltos"
       }
     ],
     features: [
-      "Extração automatizada de dados em fotos de cheques via Gemini Vision",
-      "Validação cruzada entre dígitos numéricos e texto manuscrito",
-      "Conciliação bancária assistida por IA e previsão de liquidez",
-      "Disparos e alertas automáticos de vencimento via WhatsApp Business API",
-      "Auditoria completa com guarda digital das imagens dos títulos",
-      "Indexação estruturada em base relacional de alta confiabilidade"
+      "Extracción automatizada de datos en fotos de cheques mediante Gemini Vision",
+      "Validación cruzada entre dígitos numéricos y texto manuscrito",
+      "Conciliación bancaria asistida por IA y previsión de liquidez",
+      "Disparos y alertas automáticas de vencimiento vía WhatsApp Business API",
+      "Auditoría completa con resguardo digital de las imágenes de los títulos",
+      "Indexación estructurada en base relacional de alta confiabilidad"
     ],
     techStackCategorized: [
-      { category: "Inteligência Artificial", items: ["Gemini Vision API", "Google Cloud Vertex AI", "OCR Multimodal", "Prompt Chaining"] },
-      { category: "Mensageria & Integrações", items: ["Meta WhatsApp Business API", "Webhooks Seguros", "Fila Assíncrona"] },
-      { category: "Backend & Aplicação", items: ["TypeScript", "Supabase PostgreSQL", "Storage Criptografado"] },
-      { category: "Segurança & LGPD", items: ["Mascaramento de PII bancária", "Acesso autenticado com RBAC", "Trilha de Auditoria"] }
+      { category: "Inteligencia Artificial", items: ["Gemini Vision API", "Google Cloud Vertex AI", "OCR Multimodal", "Prompt Chaining"] },
+      { category: "Mensajería & Integraciones", items: ["Meta WhatsApp Business API", "Webhooks Seguros", "Fila Asíncrona"] },
+      { category: "Backend & Aplicación", items: ["TypeScript", "Supabase PostgreSQL", "Storage Cifrado"] },
+      { category: "Seguridad & Privacidad", items: ["Enmascaramiento de datos bancarios sensibles", "Acceso autenticado con RBAC", "Pista de Auditoría"] }
     ],
     techStack: ["Google Cloud", "Gemini API", "Meta WhatsApp API", "Supabase", "TypeScript"],
     securityHighlights: [
-      "Anonimização e proteção de dados bancários sensíveis em conformidade com a LGPD",
-      "Armazenamento de imagens de cheques em storage criptografado com URLs pré-assinadas efêmeras",
-      "Acesso restrito por papéis (RBAC) para operadores financeiros e gerentes de tesouraria"
+      "Anonimización y protección de datos bancarios sensibles en estricta conformidad regulatoria",
+      "Almacenamiento de imágenes de cheques en storage cifrado con URLs prefirmadas efímeras",
+      "Acceso restringido por roles (RBAC) para operadores financieros y gerentes de tesorería"
     ],
     faq: [
       {
-        question: "A IA consegue ler cheques com caligrafia difícil?",
-        answer: "Sim. Os modelos Gemini Vision são treinados em visão multimodal avançada e cruzam a leitura do valor numérico com a linha do valor por extenso. Caso a confiança fique abaixo do limiar seguro, o sistema sinaliza para validação humana com um único clique."
+        question: "¿La IA logra leer cheques con caligrafía compleja?",
+        answer: "Sí. Los modelos Gemini Vision están entrenados en visión multimodal avanzada y cruzan la lectura del importe numérico con la línea del importe en letras. En caso de que la confianza quede por debajo del umbral de seguridad, el sistema solicita confirmación humana con un solo clic."
       },
       {
-        question: "Como o WhatsApp é notificado?",
-        answer: "Através da API oficial do WhatsApp Business. O sistema envia uma mensagem padronizada lembrando cordialmente sobre a data da compensação, garantindo alta taxa de leitura e zero atrito com o cliente."
+        question: "¿Cómo se envían las notificaciones por WhatsApp?",
+        answer: "A través de la API oficial de WhatsApp Business. El sistema envía un mensaje formal recordando cordialmente la fecha de compensación, garantizando alta tasa de lectura y cero fricción con el cliente."
       }
     ],
     featured: true,
@@ -428,7 +428,7 @@ export const projects: ProjectItem[] = [
 ];
 
 /**
- * Busca projeto pelo slug principal ou por qualquer um dos seus apelidos (aliases).
+ * Busca proyecto por el slug principal o por cualquiera de sus alias.
  */
 export function getProjectBySlug(slug: string): ProjectItem | undefined {
   const normalized = slug.toLowerCase().trim();
@@ -441,7 +441,7 @@ export function getProjectBySlug(slug: string): ProjectItem | undefined {
 }
 
 /**
- * Retorna todos os slugs válidos para geração estática (SSG) no Next.js.
+ * Retorna todos los slugs válidos para generación estática (SSG) en Next.js.
  */
 export function getAllProjectSlugs(): string[] {
   const slugs: string[] = [];

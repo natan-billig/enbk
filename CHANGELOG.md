@@ -5,6 +5,20 @@ Todas as mudanças notáveis deste projeto serão documentadas neste arquivo.
 O formato baseia-se em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Semantic Versioning (SemVer)](https://semver.org/lang/pt-BR/).
 
+## [1.3.0] - 2026-10-31
+
+### Adicionado / Internacionalização (i18n)
+- **Tradução Integral do Site e Catálogo para o Espanhol (es-ES / es-LATAM):**
+  - Atualização do idioma da raiz HTML para `lang="es"` e metadados OpenGraph para `locale: "es_ES"`.
+  - Tradução e refinamento semântico de todos os textos, descrições corporativas, dores de mercado e soluções do catálogo em `src/data/projects.ts` (ENBIK ERP, Kofre e Control Inteligente de Cheques).
+  - Tradução da interface completa de navegação, cabeçalhos, barra de atalhos rápidos e rodapés (`Navbar.tsx`, `Hero.tsx`, `ProjectCard.tsx`, `ProjectsGrid.tsx`, `ArchitectureSection.tsx`, `CatalogFAQ.tsx`, `ContactSection.tsx`, `Footer.tsx`).
+  - Tradução de todas as fichas técnicas dinâmicas em `src/app/[slug]/page.tsx` com mensagens de WhatsApp pré-formatadas em espanhol para contato corporativo e demonstração.
+  - Otimização de acessibilidade em espanhol nos atributos `aria-label`, links e botões de interface.
+
+### Governança Triádica & Auditorias Concluídas
+- **QA & Performance (`qa-performance-validator`):** `[APROVADO]` — Build estático com 10/10 rotas SSG pré-renderizadas, 0 CLS, contraste e acessibilidade WCAG 2.1 AA validados.
+- **Cibersegurança & LGPD (`cybersecurity-lgpd-auditor`):** `[APROVADO]` — Zero credenciais em código, conformidade estrita com ISO 27001/27701 e LGPD/normativas de privacidade, links externos com `rel="noopener noreferrer"`.
+
 ## [1.2.1] - 2026-10-31
 
 ### Modificado
