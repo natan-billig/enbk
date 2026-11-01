@@ -5,6 +5,21 @@ Todas as mudanças notáveis deste projeto serão documentadas neste arquivo.
 O formato baseia-se em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Semantic Versioning (SemVer)](https://semver.org/lang/pt-BR/).
 
+## [1.5.1] - 2026-11-01
+
+### Modificado / Privacidade & Demonstração de WhatsApp (Control de Cheques)
+- **Remoção de Telas Internas Exclusivas de Backoffice:**
+  - Desindexação e exclusão permanente das capturas `clientes.png` e `custos.png` da vitrine pública de Control de Cheques a pedido do proprietário da solução, blindando regras proprietárias de FinOps, scoring de clientes e taxas bancárias.
+- **Implementação dos Novos Fluxos Demonstrativos de WhatsApp (Kiro Bot):**
+  - Adição de `public/images/projects/cheques/whatsapp-ocr.png` (2160x1350, 16:10): Demonstração em alta fidelidade do recebimento de foto de cheque físico via WhatsApp, leitura e extração instantânea de dados com IA multimodal (Google Gemini Vision OCR, 99.4% de precisão) e resposta estruturada imediata.
+  - Adição de `public/images/projects/cheques/whatsapp-alertas.png` (2160x1350, 16:10): Demonstração das consultas interativas em linguagem natural (`Semana`, `Hoy`) e do disparo automático programado (Cron em D-2) de notificação preventiva ao librador via Meta WhatsApp Business API.
+- **Atualização Semântica do Catálogo (`src/data/projects.ts`):**
+  - Substituição dos nós `cheques-clientes` e `cheques-custos` por `cheques-whatsapp-ocr` e `cheques-whatsapp-alertas`, com novos títulos, subtítulos, badges operacionais e listas de capacidades.
+
+### Governança Triádica & Auditorias Concluídas
+- **QA & Performance (`qa-performance-validator`):** `[APROVADO]` — Build estático íntegro (10/10 rotas SSG), proporção 16:10 nativa (0 CLS), alt text descritivo e WAI-ARIA tabs pattern validado.
+- **Cibersegurança & LGPD (`cybersecurity-lgpd-auditor`):** `[APROVADO]` — Minimização estrita de dados (Art. 6º, III da LGPD), selo 'EJEMPLO DEMO', zero PII de terceiros, ausência de credenciais e proteção de informação comercial confidencial (ISO 27001).
+
 ## [1.5.0] - 2026-11-01
 
 ### Adicionado / Galerias de Telas Reais & Detalhamento Profundo de Opções

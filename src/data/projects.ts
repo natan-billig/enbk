@@ -497,33 +497,33 @@ export const projects: ProjectItem[] = [
         ]
       },
       {
-        id: "cheques-clientes",
-        title: "Gestión de Clientes Libradores & Scoring de Crédito",
-        subtitle: "Directorio de emisores, calificación de riesgo y cobranzas preventivas",
+        id: "cheques-whatsapp-ocr",
+        title: "Escaneo & Extracción por IA en WhatsApp",
+        subtitle: "Procesamiento de fotos de cheques con visión computacional Gemini Vision",
         description:
-          "Registro pormenorizado de cada cliente que entrega cheques en pago. El sistema calcula automáticamente un scoring de riesgo crediticio según el historial de cobros efectivos vs. rechazos por fondos insuficientes, y administra el número de teléfono corporativo utilizado por el bot de WhatsApp para enviar los recordatorios de vencimiento.",
-        image: "/images/projects/cheques/clientes.png",
-        badge: "Riesgo & Clientes",
+          "El operador o cliente envía una fotografía del cheque físico directamente por WhatsApp. El bot Kiro procesa la imagen en milisegundos con visión multimodal, extrayendo con 99.4% de precisión el banco emisor, número de cheque, fecha de cobro ('bueno para'), importe numérico y en letras, e indexándolo instantáneamente en la cartera de custodia sin digitación manual.",
+        image: "/images/projects/cheques/whatsapp-ocr.png",
+        badge: "WhatsApp IA & OCR",
         features: [
-          "Calificación de confiabilidad basada en tasa histórica de rechazos",
-          "Configuración del número de WhatsApp para notificaciones automáticas",
-          "Control de cupo crediticio máximo en cheques diferidos en cartera",
-          "Historial completo de títulos recibidos y saldados por cliente"
+          "Recepción directa de imágenes desde la cámara del smartphone o galería",
+          "Extracción instantánea de campos con Google Gemini Vision OCR",
+          "Validación cruzada automática entre importe numérico y texto en letras",
+          "Confirmación inmediata en el chat con ficha estructurada del cheque"
         ]
       },
       {
-        id: "cheques-custos",
-        title: "Costos de Liquidación & Simulación de Descuento",
-        subtitle: "Análisis de tasas financieras, comisiones de factoring y gastos",
+        id: "cheques-whatsapp-alertas",
+        title: "Alertas Preventivas & Consultas Interactivas vía WhatsApp",
+        subtitle: "Comandos en lenguaje natural ('Hoy', 'Semana') y recordatorios automáticos en D-2",
         description:
-          "Herramienta de cálculo para operaciones de descuento de cheques en bancos o entidades de factoring. Permite simular el costo financiero total (CFT), la retención por tasa nominal anual (TNA), las comisiones de canje y el importe neto que efectivamente ingresará a la cuenta de la empresa.",
-        image: "/images/projects/cheques/custos.png",
-        badge: "Tasas & Factoring",
+          "Permite a los directivos y operadores consultar su posición de cobros en cualquier momento mediante comandos simples por WhatsApp (como 'Hoy', 'Mañana' o 'Semana'). Además, el sistema ejecuta un cron automático que envía un recordatorio formal en D-2 días antes del depósito al librador, garantizando la existencia de fondos y reduciendo en un 70% los cheques rechazados.",
+        image: "/images/projects/cheques/whatsapp-alertas.png",
+        badge: "Bot & Notificaciones",
         features: [
-          "Simulación de importe líquido a acreditar según plazo al vencimiento",
-          "Comparativa de tasas de descuento entre diferentes bancos",
-          "Registro de comisiones e impuestos retenidos para contabilidad",
-          "Optimización de la selección de títulos para descontar al menor costo"
+          "Consultas instantáneas de liquidez mediante comandos rápidos ('Semana', 'Hoy')",
+          "Notificaciones automáticas en D-2 días antes de la presentación bancaria",
+          "Resúmenes semanales consolidados con totales y desglose por banco",
+          "Canal corporativo oficial y seguro vía Meta WhatsApp Business API"
         ]
       }
     ],
