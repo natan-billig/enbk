@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Sparkles, Menu, X } from "lucide-react";
 
 export function Navbar() {
@@ -27,15 +28,24 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between">
         {/* Brand Logo & Status */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative flex items-center justify-center w-9 h-9 rounded-lg bg-slate-900/90 border border-slate-800 group-hover:border-cyan-500/50 transition-all">
-            <span className="font-mono font-bold text-sm text-cyan-400 group-hover:text-cyan-300 transition-colors">
-              E
-            </span>
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-lg blur opacity-0 group-hover:opacity-30 transition-opacity" />
+          <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-slate-900/90 border border-slate-800 group-hover:border-cyan-500/60 transition-all shadow-[0_0_15px_rgba(6,182,212,0.15)] group-hover:shadow-[0_0_20px_rgba(6,182,212,0.35)] p-1">
+            <Image
+              src="/images/logo-icon.svg"
+              alt=""
+              aria-hidden="true"
+              width={32}
+              height={32}
+              priority
+              className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+            />
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-xl blur opacity-0 group-hover:opacity-30 transition-opacity pointer-events-none" />
           </div>
           <div className="flex flex-col">
-            <span className="font-mono font-extrabold text-lg tracking-wider text-slate-100 group-hover:text-cyan-400 transition-colors">
+            <span className="font-mono font-black text-xl tracking-wider text-slate-100 group-hover:text-cyan-400 transition-colors leading-tight">
               ENBK
+            </span>
+            <span className="hidden sm:inline font-mono text-[9px] font-bold text-cyan-500/80 tracking-widest uppercase">
+              Systems &amp; AI
             </span>
           </div>
 

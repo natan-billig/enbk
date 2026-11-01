@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 140" fill="none">
+  <defs>
+    <!-- Facet Gradients optimized for Fintech & Wealth -->
+    <linearGradient id="kofre-top-left" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="kofre-top-right" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="kofre-bot-left" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="kofre-bot-right" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0e7490"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="kofre-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- APEX FINANCIAL SHIELD (Centered at X=75, Y=70) -->
+  <g transform="translate(15, 10)">
+    <!-- Backlight Emerald/Cyan Glow -->
+    <polygon points="65,15 108,34 94,88 65,110 36,88 22,34" 
+             fill="#10b981" opacity="0.18" filter="url(#kofre-glow)"/>
+
+    <!-- 4 Matrix Facets representing Multi-Currency Security (USD, PYG, BRL, Treasury) -->
+    <!-- Quadrant 1: Top-Left (Multi-Moeda Vault) -->
+    <polygon points="63,20 28,36 38,58 63,58" fill="url(#kofre-top-left)" stroke="#06080d" stroke-width="2" />
+    <path d="M 38 42 L 53 42 M 38 49 L 49 49 M 38 54 L 53 54" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" opacity="0.95" />
+
+    <!-- Quadrant 2: Top-Right (Key / Token) -->
+    <polygon points="67,20 102,36 92,58 67,58" fill="url(#kofre-top-right)" stroke="#06080d" stroke-width="2" />
+    <polyline points="77,54 77,40 89,54 89,40" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.95" />
+
+    <!-- Quadrant 3: Bottom-Left (Banking Conciliation) -->
+    <polygon points="63,62 39,62 47,88 63,103" fill="url(#kofre-bot-left)" stroke="#06080d" stroke-width="2" />
+    <path d="M 49 71 L 57 71 C 60 71 61 73 61 75 C 61 77 60 78 57 78 L 49 78 M 49 78 L 58 78 C 61 78 62 80 62 83 C 62 86 61 87 58 87 L 49 87" 
+          stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.95"/>
+    <line points="49,70 49,88" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- Quadrant 4: Bottom-Right (Kofre Key) -->
+    <polygon points="67,62 91,62 83,88 67,103" fill="url(#kofre-bot-right)" stroke="#06080d" stroke-width="2" />
+    <path d="M 74 70 L 74 88 M 84 70 L 74 79 L 85 88" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+
+    <!-- Center Intersecting Matrix Vault Core -->
+    <circle cx="65" cy="60" r="5" fill="#06080d" stroke="#34d399" stroke-width="2"/>
+    <circle cx="65" cy="60" r="2" fill="#34d399"/>
+  </g>
+
+  <!-- TYPOGRAPHY: "KOFRE" -->
+  <g transform="translate(160, 0)">
+    <text x="0" y="78" fill="#f8fafc" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="52" font-weight="900" letter-spacing="3">
+      KOFRE
+    </text>
+    <text x="2" y="102" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="3.5">
+      FINANCIAL SHIELD &amp; MULTI-CURRENCY
+    </text>
+    
+    <!-- Shield indicator dot -->
+    <rect x="190" y="42" width="6" height="6" rx="1" fill="#10b981" />
+  </g>
+</svg>

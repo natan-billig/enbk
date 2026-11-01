@@ -5,6 +5,22 @@ Todas as mudanças notáveis deste projeto serão documentadas neste arquivo.
 O formato baseia-se em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Semantic Versioning (SemVer)](https://semver.org/lang/pt-BR/).
 
+## [1.4.0] - 2026-10-31
+
+### Adicionado / Identidade Visual & Branding Oficial
+- **Implementação do Logotipo Oficial da ENBK ("The Cyber Core"):**
+  - Definição da Opção 01 como identidade visual oficial mestre da marca ENBK (Erik Natan Billig Kunrath).
+  - Criação dos ativos vetoriais puros de alta definição: `public/images/logo.svg` (marca completa) e `public/images/logo-icon.svg` (símbolo isométrico).
+  - Atualização do cabeçalho de navegação (`Navbar.tsx`) e rodapé institucional (`Footer.tsx`) com o ícone vetorial oficial e tipografia com iluminação dinâmica no hover.
+  - Configuração canônica de favicons e touch icons em `layout.tsx` (`metadata.icons`).
+- **Preservação e Adaptação do Logotipo de Escudo para o Kofre ("The Apex Financial Shield"):**
+  - Salvamento da Opção 04 como ativo mestre oficial dedicado ao **Kofre**: `public/images/logos/kofre-shield.svg` e `public/images/logos/kofre-shield-icon.svg`.
+  - Customização da paleta para Esmeralda & Ciano com tipografia *"KOFRE • FINANCIAL SHIELD & MULTI-CURRENCY"*.
+
+### Governança Triádica & Auditorias Concluídas
+- **QA & Performance (`qa-performance-validator`):** `[APROVADO]` — Otimização de renderização de SVG vetorial, zero CLS, sem impacto de bundle JS.
+- **Cibersegurança & LGPD (`cybersecurity-lgpd-auditor`):** `[APROVADO]` — Sanitização de arquivos SVG (sem scripts executáveis ou injeção XML), zero secrets e integridade de dados.
+
 ## [1.3.0] - 2026-10-31
 
 ### Adicionado / Internacionalização (i18n)

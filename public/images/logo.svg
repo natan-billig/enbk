@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 140" fill="none">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="core-cyan-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="core-emerald-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="core-dark-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="core-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- ISOMETRIC CUBE SYMBOL (Centered at X=75, Y=70) -->
+  <g transform="translate(15, 10)">
+    <!-- Ambient Glow behind symbol -->
+    <circle cx="65" cy="60" r="45" fill="#06b6d4" opacity="0.18" filter="url(#core-glow)" />
+
+    <!-- Top Isometric Face: Formed by tech chevron plates -->
+    <polygon points="65,22 102,43 65,64 28,43" fill="url(#core-cyan-grad)" opacity="0.9" />
+    <polygon points="65,26 96,43 65,60 34,43" fill="#0b0f17" opacity="0.4" />
+
+    <!-- Left Isometric Face: Segmented "E" bars with negative space -->
+    <polygon points="25,48 62,69 62,81 25,60" fill="url(#core-cyan-grad)" />
+    <polygon points="25,65 62,86 62,96 25,75" fill="url(#core-cyan-grad)" opacity="0.8" />
+    <polygon points="25,80 62,101 62,112 25,91" fill="url(#core-cyan-grad)" opacity="0.6" />
+
+    <!-- Right Isometric Face: Angled "K" & "B" faceted structure -->
+    <polygon points="68,69 105,48 105,112 68,91" fill="url(#core-dark-grad)" stroke="#1e293b" stroke-width="1.5" />
+    <!-- Dynamic K/B cyan slash inside right face -->
+    <polyline points="73,95 90,80 102,96" stroke="url(#core-cyan-grad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+    <line points="90,80 102,64" stroke="url(#core-emerald-grad)" stroke-width="4.5" stroke-linecap="round" />
+
+    <!-- Core glowing node in center -->
+    <circle cx="65" cy="64" r="3.5" fill="#38bdf8" filter="url(#core-glow)" />
+    <circle cx="65" cy="64" r="1.5" fill="#ffffff" />
+  </g>
+
+  <!-- TYPOGRAPHY: "ENBK" -->
+  <g transform="translate(160, 0)">
+    <!-- Main Letters ENBK -->
+    <text x="0" y="78" fill="#f8fafc" font-family="'JetBrains Mono', 'Fira Code', 'Inter', monospace, sans-serif" font-size="52" font-weight="900" letter-spacing="4">
+      ENBK
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="3" y="102" fill="#06b6d4" font-family="'JetBrains Mono', monospace, sans-serif" font-size="11" font-weight="700" letter-spacing="3.5">
+      ENTERPRISE SYSTEMS &amp; AI
+    </text>
+
+    <!-- Accent dot / Pulse indicator -->
+    <circle cx="168" cy="46" r="3" fill="#10b981" />
+    <circle cx="168" cy="46" r="6" fill="#10b981" opacity="0.3" />
+  </g>
+</svg>
